@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Nimbus Sans";
+  src: url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nimbus Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+}
+
+
+
+/* ШАПКА */
+
+
+
+
+
+/* ОСНОВНОЙ РАЗДЕЛ */
+.section {
+  background-position: top;
+  background-size: cover;
+}
+
+.section_1 {
+  background-image: url(./images/bg-section-1.jpg);
+}
+
+.section_2 {
+  background-image: url(./images/bg-section-2.jpg);
+}
+
+.section_3 {
+  background-image: url(./images/bg-section-3.jpg);
+}
+
+.section_4 {
+  background-image: url(./images/bg-section-4.jpg);
+}
