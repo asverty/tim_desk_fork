@@ -22,16 +22,58 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   background-color: #FAFAFA;
 }
 
 
 
 /* ШАПКА */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 64px;
+  width: 94vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.header__logo {
+  width: 139px;
+  height: 41px;
+  background-image: url(./images/logo-white.png);
+  background-size: cover;
+}
 
+.header__block-one {
+  margin-left: 8.5vw;
+}
+
+.header__block-two {
+  margin-left: auto;
+}
+
+.header__block-three {
+  margin-left: auto;
+}
+
+.header__button {
+  margin-right: 2.5vw;
+  font-size: 1.6rem;
+  color: #FAFAFA;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.header__button:last-of-type {
+  margin-right: 0;
+}
 
 
 
@@ -55,4 +97,81 @@ body {
 
 .section_4 {
   background-image: url(./images/bg-section-4.jpg);
+}
+
+.section__info {
+  width: 94vw;
+  height: 100%;
+  padding-top: 114px;
+  padding-bottom: 62px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__info_1 {
+  justify-content: flex-start;
+}
+
+.section__info_2 {
+  justify-content: flex-end;
+}
+
+.section__info_3 {
+  justify-content: flex-start;
+}
+
+.section__info_4 {
+  justify-content: flex-start;
+}
+
+.section__heading-alignment {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__heading {
+  margin-bottom: 40px;
+  margin-left: -1vw;
+  font-size: 26.8rem;
+  line-height: 22.8rem;
+  color: #FAFAFA;
+}
+
+.section__heading-span {
+  margin-left: 26px;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: #FAFAFA;
+}
+
+.section__text {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #FAFAFA;
+}
+
+.section__text_1 {
+  margin-top: auto;
+}
+
+.section__text_2
+.section__text_3
+
+.section__text_4 {
+  margin-top: auto;
+}
+
+
+
+/* СЧЁТЧИК СЕКЦИЙ */
+.counter {
+  position: absolute;
+  bottom: 2.7vw;
+  right: 4vw;
+  z-index: 1;
+  font-size: 6.4rem;
+  line-height: 1;
+  color: #FAFAFA;
 }
