@@ -108,22 +108,11 @@ body {
   margin-right: 3vw;
   display: flex;
   flex-direction: column;
-}
-
-.section__info_1 {
   justify-content: flex-start;
 }
 
-.section__info_2 {
+.section__info_flex-end {
   justify-content: flex-end;
-}
-
-.section__info_3 {
-  justify-content: flex-start;
-}
-
-.section__info_4 {
-  justify-content: flex-start;
 }
 
 .section__heading-alignment {
@@ -152,15 +141,7 @@ body {
   color: #FAFAFA;
 }
 
-.section__text_1 {
-  margin-top: auto;
-}
-
-.section__text_2
-
-.section__text_3
-
-.section__text_4 {
+.section__text_bottom {
   margin-top: auto;
 }
 
