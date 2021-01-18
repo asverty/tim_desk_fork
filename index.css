@@ -180,6 +180,21 @@ body {
 
 
 
+/* БРЕНДЫ */
+.brands {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 47vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #FAFAFA;
+}
+
+
+
 /* КУКИ */
 .cookies {
   position: absolute;

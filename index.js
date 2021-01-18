@@ -1,5 +1,5 @@
 // ОБЪЯВЛЕНИЕ ПЕРЕМЕННЫХ
-
+const counter = document.querySelector('.counter');
 
 
 // fullPage.js
@@ -69,7 +69,9 @@ const myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){},
+	onLeave: function(origin, destination, direction){
+		counter.textContent = `${destination.index + 1}/4`;
+	},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},
