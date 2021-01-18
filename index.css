@@ -124,25 +124,45 @@ body {
   margin-bottom: 40px;
   margin-left: -1vw;
   font-size: 26.8rem;
-  line-height: 22.8rem;
+  line-height: 0.8;
   color: #FAFAFA;
 }
 
 .section__heading-span {
   margin-left: 26px;
   font-size: 6.4rem;
-  line-height: 7.7rem;
+  line-height: 1.2;
   color: #FAFAFA;
 }
 
 .section__text {
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 1.2;
   color: #FAFAFA;
 }
 
 .section__text_bottom {
   margin-top: auto;
+}
+
+.section__text_short {
+  width: 90%;
+}
+
+@media screen and (max-width: 1919px) {
+  .section__heading {
+    font-size: 20rem;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .section__heading {
+    font-size: 16rem;
+  }
+
+  .section__heading-span {
+    font-size: 4.4rem;
+  }
 }
 
 
@@ -156,4 +176,113 @@ body {
   font-size: 6.4rem;
   line-height: 1;
   color: #FAFAFA;
+}
+
+
+
+/* ПОДВАЛ */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 47vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #0F0F0F;
+}
+
+.footer__navigation {
+  width: 50%;
+  margin-top: 64px;
+  margin-left: 64px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__nav-list {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav-list-element {
+  margin-bottom: 20px;
+}
+
+.footer__nav-list-element:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__nav-link {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color:  #FAFAFA;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__contacts {
+  width: 50%;
+  margin-top: 64px;
+  margin-right: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__contact-type {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color:  #FAFAFA;
+}
+
+.footer__contact-data {
+  width: min-content;
+  font-size: 6.2rem;
+  line-height: 1.2;
+  color:  #FAFAFA;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1919px) {
+  .footer__contact-data {
+    font-size: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .footer__nav-link {
+    font-size: 1.3rem;
+  }
+
+  .footer__contact-type {
+    font-size: 1.3rem;
+  }
+
+  .footer__contact-data {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-height: 1079px) {
+  .footer__navigation {
+    margin-top: 38px;
+  }
+
+  .footer__contacts {
+    margin-top: 38px;
+  }
 }
