@@ -180,6 +180,52 @@ body {
 
 
 
+/* КУКИ */
+.cookies {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 47vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F0F0F;
+}
+
+.cookies__text {
+  margin-top: 65px;
+  margin-left: 96px;
+  margin-right: 120px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+.cookies__close-button {
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: 110px;
+  align-self: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url(./images/cookies-close-button.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-height: 899px) {
+  .cookies__close-button {
+    margin-bottom: 80px;
+  }
+}
+
+
+
 /* ПОДВАЛ */
 
 .footer {
