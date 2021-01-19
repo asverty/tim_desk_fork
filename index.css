@@ -27,7 +27,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   height: 64px;
   width: 94vw;
   padding-left: 3vw;
@@ -381,7 +381,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
   height: 508px;
   padding-top: 64px;
@@ -392,39 +392,13 @@ body {
 }
 
 .form__heading {
-  width: 94vw;
-  height: 64px;
   margin-top: 50px;
   margin-bottom: 58px;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.form__name {
+  margin-left: 3vw;
+  margin-right: auto;
   font-size: 64px;
   line-height: 1;
   text-transform: uppercase;
-}
-
-.form__close-button {
-  width: 48px;
-  height: 48px;
-  align-self: center;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  background-image: url(./images/form-close-button.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.form__close-button:hover {
-  cursor: pointer;
 }
 
 .form__grid {
@@ -437,11 +411,14 @@ body {
 }
 
 .form__left-half {
+  width: 580px;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
 }
 
 .form__right-half {
+  width: 580px;
   display: flex;
   flex-direction: column;
 }
@@ -454,7 +431,6 @@ body {
 }
 
 .form__input {
-  margin-bottom: 48px;
   font-size: 36px;
   line-height: 1.2;
   border: none;
@@ -475,6 +451,7 @@ body {
 }
 
 .form__checkbox-alignment {
+  margin-top: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -485,7 +462,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .form__true-checkbox {
@@ -520,21 +496,62 @@ body {
   opacity: 1;
 }
 
-
-
-
 .form__checkbox-description {
   margin-left: 24px;
   font-size: 14px;
   line-height: 1.2;
 }
 
+.form__button {
+  width: 220px;
+  height: 48px;
+  margin-top: 65px;
+  border-radius: 33px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.2;
+}
 
+.form__button:hover {
+  cursor: pointer;
+}
 
+.form__button_signin {
+  margin-left: auto;
+  margin-right: 84px;
+  background-color: #FAFAFA;
+  border: 1px solid black;
+  color: black;
+}
 
+.form__button_submit {
+  background-color: black;
+  border: none;
+  color: #FAFAFA;
+}
 
+.form__forgot-password {
+  margin-top: 104px;
+  margin-right: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: underline;
+  color: black;
+}
 
+.form__forgot-password:hover {
+  cursor: pointer;
+}
 
+@media screen and (max-width: 1919px) {
+  .form__heading {
+    font-size: 48px;
+  }
+}
 
 
 
@@ -543,7 +560,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 3;
+  z-index: 5;
   width: 100vw;
   height: 47vh;
   display: flex;
