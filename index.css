@@ -386,13 +386,14 @@ body {
   height: 47vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #0F0F0F;
 }
 
 .cookies__text {
-  margin-top: 65px;
-  margin-left: 96px;
-  margin-right: 120px;
+  margin-top: 7vh;
+  margin-left: 5vw;
+  margin-right: 6vw;
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -402,8 +403,7 @@ body {
 .cookies__close-button {
   width: 50px;
   height: 50px;
-  margin-top: auto;
-  margin-bottom: 110px;
+  margin-bottom: 10vh;
   align-self: center;
   border: none;
   outline: none;
@@ -414,8 +414,12 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-height: 899px) {
-  .cookies__close-button {
-    margin-bottom: 80px;
+.cookies__close-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  .cookies__text {
+    font-size: 14px;
   }
 }
