@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   height: 64px;
   width: 94vw;
   margin-left: 3vw;
@@ -47,6 +47,10 @@ body {
   height: 41px;
   background-image: url(./images/logo-white.png);
   background-size: cover;
+}
+
+.header__logo_black {
+  background-image: url(./images/logo-black.png);
 }
 
 .header__block-one {
@@ -69,6 +73,10 @@ body {
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+.header__button_black {
+  color: black;
 }
 
 .header__button:last-of-type {
@@ -180,17 +188,87 @@ body {
 
 
 
-/* БРЕНДЫ */
-.brands {
+/* БРЕНДЫ и КАТЕГОРИИ */
+.menu {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
   width: 100vw;
+  height: calc(47vh + 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #FAFAFA;
+}
+
+.menu__grid {
+  width: 100vw;
   height: 47vh;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.menu__left-side {
   display: flex;
   flex-direction: row;
-  background-color: #FAFAFA;
+}
+
+.menu__list {
+  width: 30%;
+  margin-top: 48px;
+  list-style: none;
+}
+
+.menu__list:first-of-type {
+  margin-left: 3vw;
+}
+
+.menu__list-element {
+  margin-bottom: 18px;
+}
+
+.menu__list-element:last-of-type {
+  margin-bottom: 0;
+}
+
+.menu__link {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: black;
+  text-decoration: none;
+}
+
+.menu__right-side {
+  background-size: cover;
+  background-position: top;
+  background-repeat:no-repeat;
+}
+
+.menu__right-side_brands {
+  background-image: url(./images/brands-bg.jpg);
+}
+
+.menu__right-side_categorys {
+  background-image: url(./images/categorys-bg.jpg);
+}
+
+@media screen and (max-width: 1919px) {
+  .menu__list:first-of-type {
+    margin-right: 3vw;
+  }
+
+  .menu__link {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .menu__link {
+    font-size: 2.2rem;
+  }
 }
 
 
