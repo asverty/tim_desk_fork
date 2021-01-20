@@ -74,46 +74,44 @@ body {
 
 
 
-/* ERROR 404 */
-.error-404 {
+/* ABOUT US */
+.about-us {
   width: 94vw;
   padding-left: 3vw;
   padding-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__heading {
+  margin-top: 98px;
+  align-self: flex-start;
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+.about-us__grid {
+  margin-top: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.error-404__heading {
-  margin-top: 347px;
-  margin-left: auto;
-  margin-right: 102px;
-  font-size: 288px;
-  line-height: 0.8;
-  color: #0F0F0F;
-  user-select: none; 
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
+.about-us__left-half {
+  padding-right: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
-.error-404__text {
-  margin-top: 360px;
-  font-size: 36px;
+.about-us__right-half {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__text {
+  margin-bottom: 16px;
+  font-size: 14px;
   line-height: 1.2;
-  color: #0F0F0F;
-}
-
-@media screen and (max-height: 1060px) {
-  .error-404__heading {
-    margin-top: 280px;
-    font-size: 252px;
-  }
-  
-  .error-404__text {
-    margin-top: 293px;
-  }
 }
 
 

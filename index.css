@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("./vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -50,19 +50,19 @@ body {
 .header__logo {
   width: 139px;
   height: 41px;
-  background-image: url(../../images/logo-black.png);
+  background-image: url(./images/logo-black.png);
   background-size: cover;
 }
 
 .header__logo_white {
-  background-image: url(../../images/logo-white.png);
+  background-image: url(./images/logo-white.png);
 }
 
 .header__button {
   margin-right: 2.5vw;
   font-size: 16px;
   text-decoration: none;
-  color: black;
+  color: #0F0F0F;
   background-color: transparent;
   outline: none;
   border: none;
@@ -89,19 +89,19 @@ body {
 }
 
 .section_1 {
-  background-image: url(../../images/bg-section-1.jpg);
+  background-image: url(./images/bg-section-1.jpg);
 }
 
 .section_2 {
-  background-image: url(../../images/bg-section-2.jpg);
+  background-image: url(./images/bg-section-2.jpg);
 }
 
 .section_3 {
-  background-image: url(../../images/bg-section-3.jpg);
+  background-image: url(./images/bg-section-3.jpg);
 }
 
 .section_4 {
-  background-image: url(../../images/bg-section-4.jpg);
+  background-image: url(./images/bg-section-4.jpg);
 }
 
 .section__info {
@@ -340,7 +340,7 @@ body {
 .menu__link {
   font-size: 32px;
   line-height: 1.2;
-  color: black;
+  color: #0F0F0F;
   text-decoration: none;
 }
 
@@ -351,11 +351,11 @@ body {
 }
 
 .menu__right-half_brands {
-  background-image: url(../../images/brands-bg.jpg);
+  background-image: url(./images/brands-bg.jpg);
 }
 
 .menu__right-half_categories {
-  background-image: url(../../images/categories-bg.jpg);
+  background-image: url(./images/categories-bg.jpg);
 }
 
 @media screen and (max-width: 1900px) {
@@ -479,7 +479,7 @@ body {
   display: flex;
   width: 24px;
   height: 24px;
-  background-image: url(../../images/checkbox-cirlce.svg);
+  background-image: url(./images/checkbox-cirlce.svg);
   background-position: center;
   background-size: cover;
 }
@@ -490,7 +490,7 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../../images/checkbox-cross.svg);
+  background-image: url(./images/checkbox-cross.svg);
   background-position: center;
   background-size: cover;
   opacity: 0;
@@ -526,12 +526,12 @@ body {
   margin-left: auto;
   margin-right: 84px;
   background-color: #FAFAFA;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #0F0F0F;
+  color: #0F0F0F;
 }
 
 .form__button_submit {
-  background-color: black;
+  background-color: #0F0F0F;
   border: none;
   color: #FAFAFA;
 }
@@ -549,7 +549,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   text-decoration: underline;
-  color: black;
+  color: #0F0F0F;
 }
 
 .form__forgot-password:hover {
@@ -560,7 +560,7 @@ body {
   margin-top: 48px;
   font-size: 14px;
   line-height: 1.2;
-  color: black;
+  color: #0F0F0F;
 }
 
 @media screen and (max-width: 1900px) {
@@ -603,7 +603,7 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
-  background-image: url(../../images/cookies-close-button.svg);
+  background-image: url(./images/cookies-close-button.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
