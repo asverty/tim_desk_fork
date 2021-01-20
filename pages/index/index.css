@@ -131,6 +131,12 @@ body {
   font-size: 268px;
   line-height: 0.8;
   color: #FAFAFA;
+  user-select: none; 
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .section__heading-span {
@@ -138,12 +144,24 @@ body {
   font-size: 64px;
   line-height: 1.2;
   color: #FAFAFA;
+  user-select: none; 
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .section__text {
   font-size: 16px;
   line-height: 1.2;
   color: #FAFAFA;
+  user-select: none; 
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .section__text_bottom {
@@ -286,7 +304,7 @@ body {
 
 
 
-/* MENUS: BRANDS & CATEGORIES */
+/* MENUS: BRANDS, CATEGORIES */
 .menu {
   position: absolute;
   top: 0;
@@ -364,7 +382,7 @@ body {
 
 
 
-/* FORMS: LOG IN, SIGN IN & SUBSCRIBE */
+/* FORMS: LOG IN, SIGN IN, PASSWORD RECOVERY, SUBSCRIBE */
 .form {
   position: absolute;
   top: 0;
@@ -518,6 +536,10 @@ body {
   color: #FAFAFA;
 }
 
+.form__button_recovery {
+  margin-top: 48px;
+}
+
 .form__forgot-password {
   margin-top: 104px;
   margin-right: auto;
@@ -532,6 +554,13 @@ body {
 
 .form__forgot-password:hover {
   cursor: pointer;
+}
+
+.form__recovery-text {
+  margin-top: 48px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: black;
 }
 
 @media screen and (max-width: 1900px) {
