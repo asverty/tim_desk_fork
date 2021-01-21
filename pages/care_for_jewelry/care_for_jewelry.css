@@ -82,26 +82,30 @@ body {
 
 
 
-/* OFFER */
-.text-page {
+/* CARE FOR JEWELRY */
+.offer {
   width: 94%;
-  padding-bottom: 68px;
   padding-left: 3%;
   padding-right: 3%;
 }
 
-.text-page__heading {
+.offer__heading {
   padding-top: 98px;
   padding-bottom: 48px;
   font-size: 64px;
   line-height: 1.2;
 }
 
-.text-page__paragraph {
+.offer__text {
   padding-bottom: 16px;
   font-size: 14px;
   line-height: 1.2;
 }
+
+.offer__text:last-child {
+  padding-bottom: 68px;
+}
+
 
 
 /* MENUS: BRANDS, CATEGORIES */
