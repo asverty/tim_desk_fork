@@ -15,6 +15,11 @@
   font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6, 
+p, span, li, a, input {
+  color: #0F0F0F;
+}
+
 body {
   position: relative;
   background-color: #FAFAFA;
@@ -83,27 +88,27 @@ body {
 
 
 /* CARE FOR JEWELRY */
-.offer {
+.text-page {
   width: 94%;
+  padding-bottom: 68px;
   padding-left: 3%;
   padding-right: 3%;
 }
 
-.offer__heading {
+.text-page__heading {
   padding-top: 98px;
   padding-bottom: 48px;
   font-size: 64px;
   line-height: 1.2;
+  text-transform: uppercase;
+  color: #0F0F0F;
 }
 
-.offer__text {
+.text-page__paragraph {
   padding-bottom: 16px;
   font-size: 14px;
   line-height: 1.2;
-}
-
-.offer__text:last-child {
-  padding-bottom: 68px;
+  color: #0F0F0F;
 }
 
 
@@ -209,6 +214,7 @@ body {
   font-size: 64px;
   line-height: 1;
   text-transform: uppercase;
+  color: #0F0F0F;
 }
 
 .form__grid {
@@ -237,11 +243,13 @@ body {
   font-size: 16px;
   line-height: 1.2;
   text-transform: uppercase;
+  color: #0F0F0F;
 }
 
 .form__input {
   font-size: 36px;
   line-height: 1.2;
+  color: #0F0F0F;
   border: none;
   outline: none;
   background-color: transparent;
@@ -309,6 +317,7 @@ body {
   margin-left: 24px;
   font-size: 14px;
   line-height: 1.2;
+  color: #0F0F0F;
 }
 
 .form__button {
@@ -320,6 +329,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   line-height: 1.2;
+  color: #0F0F0F;
 }
 
 .form__button:hover {
