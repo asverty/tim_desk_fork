@@ -361,6 +361,11 @@ body {
   cursor: pointer;
 }
 
+.card__like-button_active {
+  background-image: url(../../images/card-like-button-active.svg);
+}
+
+
 @media screen and (max-width: 1900px) {
   .card__name {
     font-size: 30px;
