@@ -185,7 +185,7 @@ body {
 .filters__fake-radio::before {
   position: absolute;
   top: -10px;
-  left: -12px;
+  left: -27px;
   height: 40px;
   display: flex;
   content: "";
@@ -196,32 +196,32 @@ body {
 }
 
 .filters__fake-radio_all::before {
-  width: 57px;
+  width: 87px;
 }
 
 .filters__fake-radio_my::before {
-  width: 62px;
+  width: 92px;
 }
 
 .filters__fake-radio_rings::before {
-  width: 90px;
+  width: 120px;
 }
 
 .filters__fake-radio_bracelets::before {
-  width: 111px;
+  width: 141px;
   border-radius: 50%;
 }
 
 .filters__fake-radio_pendals::before {
-  width: 113px;
+  width: 143px;
 }
 
 .filters__fake-radio_earrings::before {
-  width: 88px;
+  width: 118px;
 }
 
 .filters__fake-radio_hairpins::before {
-  width: 100px;
+  width: 130px;
 }
 
 .filters__true-radio:checked + 

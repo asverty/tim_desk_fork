@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="">
+  <title>Личный кабинет — Магазин «SYMPTOM»</title>
+  <link rel="stylesheet" href="./account.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__fraction">
+      <a class="header__logo" href="../../index.html"></a>
+    </div>
+    <div class="header__fraction">
+      <button class="header__button">БРЕНДЫ</button>
+      <button class="header__button">КАТЕГОРИИ</button>
+    </div>
+    <div class="header__fraction">
+      <button class="header__button">ПОДПИСАТЬСЯ</button>
+    </div>
+    <div class="header__fraction">
+      <button class="header__button">ВОЙТИ</button>
+      <a class="header__button" href="../wishes/wishes.html">ЖЕЛАНИЯ</a>
+      <a class="header__button" href="../cart/cart.html">КОРЗИНА(00)</a>
+    </div>
+  </header>
+
+
+  <!-- ACCOUNT -->
+  <main class="account">
+    <h1 class="account__name">Nagibator-2000</h1>
+    <!-- Переключатели -->
+    <ul class="filters">
+      <li class="filters__filter filters__filter_closer">
+        <label class="filters__label">
+          <input class="filters__true-radio" type="radio" name="filter" checked>
+          <span class="filters__fake-radio filters__fake-radio_profile">Профиль</span>
+        </label>
+      </li>
+      <li class="filters__filter filters__filter_closer">
+        <label class="filters__label">
+          <input class="filters__true-radio" type="radio" name="filter">
+          <span class="filters__fake-radio filters__fake-radio_orders">Заказы</span>
+        </label>
+      </li>
+    </ul>
+    <!-- Профиль -->
+    <form class="profile">
+      <div class="profile__left-half">
+        <div class="profile__alignment">
+          <div class="profile__input-group">
+            <h4 class="profile__input-heading">Имя:</h4>
+            <input class="profile__input" type="text" placeholder="Ваше имя" value="Иван" readonly>
+          </div>
+          <div class="profile__input-group">
+            <h4 class="profile__input-heading">Фамилия:</h4>
+            <input class="profile__input" type="text" placeholder="Ваша фамилия" value="Петров" readonly>
+          </div>
+        </div>
+        <div class="profile__input-group profile__input-group_wide">
+          <h4 class="profile__input-heading">E-mail:</h4>
+          <input class="profile__input" type="email" placeholder="Ваш E-mail" value="ivanmail@gmail.com" readonly>
+        </div>
+        <button class="profile__button profile__button_signout">Выйти</button>
+      </div>
+      <div class="profile__right-half">
+        <div class="profile__input-group profile__input-group_wide">
+          <h4 class="profile__input-heading">Имя пользователя:</h4>
+          <input class="profile__input" type="text" placeholder="Ваше имя пользователя" value="Nagibator-2000" readonly>
+        </div>
+        <div class="profile__input-group profile__input-group_wide">
+          <h4 class="profile__input-heading">Пароль:</h4>
+          <input class="profile__input" type="password" placeholder="Ваш пароль" value="123456789" readonly>
+        </div>
+        <button class="profile__button profile__button_edit">Изменить</button>
+      </div>
+    </form>
+
+    <!-- Заказы -->
+    <!-- <section class="orders orders_hidden">
+      <div class="order">
+        <div class="order__left-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Номер:</h4>
+            <span class="order__cell-data">809876</span>
+          </div>
+          <div class="order__cell">
+            <h4 class="order__cell-name">Дата:</h4>
+            <span class="order__cell-data">12.05.2020</span>
+          </div>
+        </div>
+        <div class="order__right-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Состояние:</h4>
+            <span class="order__cell-data">Доставлено</span>
+          </div>
+          <div class="order__cell order__cell_wide">
+            <h4 class="order__cell-name">Итого:</h4>
+            <span class="order__cell-data">11 000 RUB за 3 вещи</span>
+          </div>
+        </div>
+      </div>
+      <div class="order">
+        <div class="order__left-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Номер:</h4>
+            <span class="order__cell-data">13586</span>
+          </div>
+          <div class="order__cell">
+            <h4 class="order__cell-name">Дата:</h4>
+            <span class="order__cell-data">15.02.2020</span>
+          </div>
+        </div>
+        <div class="order__right-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Состояние:</h4>
+            <span class="order__cell-data">Доставлено</span>
+          </div>
+          <div class="order__cell order__cell_wide">
+            <h4 class="order__cell-name">Итого:</h4>
+            <span class="order__cell-data">66 000 RUB за 5 вещей</span>
+          </div>
+        </div>
+      </div>
+      <div class="order">
+        <div class="order__left-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Номер:</h4>
+            <span class="order__cell-data">685841</span>
+          </div>
+          <div class="order__cell">
+            <h4 class="order__cell-name">Дата:</h4>
+            <span class="order__cell-data">3.07.2021</span>
+          </div>
+        </div>
+        <div class="order__right-half">
+          <div class="order__cell">
+            <h4 class="order__cell-name">Состояние:</h4>
+            <span class="order__cell-data">Доставлено</span>
+          </div>
+          <div class="order__cell order__cell_wide">
+            <h4 class="order__cell-name">Итого:</h4>
+            <span class="order__cell-data">2 000 RUB за 2 вещи</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- MENU: BRANDS -->
+  <!-- <div class="menu">
+    <nav class="menu__left-half">
+      <ul class="menu__list">
+        <li class="menu__list-element"><a href="" class="menu__link">Other Objects</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Sub Rosa</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">BLACK FORM</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">HUBRIS</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Arha</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">1991</a></li>
+      </ul>
+      <ul class="menu__list">
+        <li class="menu__list-element"><a href="" class="menu__link">Atauchi</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Odor Objects</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Anna Maslovskaya</a></li>
+      </ul>
+    </nav>
+    <div class="menu__right-half menu__right-half_brands"></div>
+  </div> -->
+
+
+  <!-- MENU: CATEGORIES -->
+  <!-- <div class="menu">
+    <nav class="menu__left-half">
+      <ul class="menu__list">
+        <li class="menu__list-element"><a href="" class="menu__link">Подвески</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Серьги</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Кольца</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Браслеты</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Заколки</a></li>
+      </ul>
+      <ul class="menu__list">
+        <li class="menu__list-element"><a href="" class="menu__link">Парфюм</a></li>
+        <li class="menu__list-element"><a href="" class="menu__link">Головные уборы</a></li>
+      </ul>
+    </nav>
+    <div class="menu__right-half menu__right-half_categories"></div>
+  </div> -->
+
+
+  <!-- FORM: SIGN IN -->
+  <!-- <form class="form">
+    <h3 class="form__heading">Регистрация</h3>
+    <div class="form__grid">
+      <div class="form__left-half">
+        <h4 class="form__input-name">E-mail:</h4>
+        <input class="form__input" placeholder="your@e-mail.com">
+        <span class="form__error">Введите адрес электронной почты</span>
+        <label class="form__checkbox-alignment">
+          <div>
+            <input class="form__true-checkbox" type="checkbox" checked>
+            <div class="form__fake-checkbox"></div>
+          </div>
+          <p class="form__checkbox-description">I would like to receive information about new collections and<br>special
+            offers by the specified email</p>
+        </label>
+      </div>
+      <div class="form__right-half">
+        <h4 class="form__input-name">Пароль:</h4>
+        <input class="form__input" placeholder="Your pass">
+        <span class="form__error">Пароль слишком короткий</span>
+        <label class="form__checkbox-alignment">
+          <div>
+            <input class="form__true-checkbox" type="checkbox" checked>
+            <div class="form__fake-checkbox"></div>
+          </div>
+          <p class="form__checkbox-description">By clicking the "Checkout" button you consent to the processing<br>of
+            your
+            personal data</p>
+        </label>
+        <button class="form__button form__button_submit">Регистрация</button>
+      </div>
+    </div>
+  </form> -->
+
+
+  <!-- FORM: LOG IN -->
+  <!-- <form class="form">
+    <h3 class="form__heading">Вход</h3>
+    <div class="form__grid">
+      <div class="form__left-half">
+        <h4 class="form__input-name">E-mail:</h4>
+        <input class="form__input" placeholder="your@e-mail.com">
+        <span class="form__error">Неверный адрес электронной почты</span>
+        <button class="form__button form__button_signin">Регистрация</button>
+      </div>
+      <div class="form__right-half">
+        <h4 class="form__input-name">Пароль:</h4>
+        <input class="form__input" placeholder="Your pass">
+        <span class="form__error">Неверный пароль</span>
+        <button class="form__button form__button_submit">Вход</button>
+        <button class="form__forgot-password">Забыли пароль?</button>
+      </div>
+    </div>
+  </form> -->
+
+  <!-- FORM: PASSWORD RECOVERY -->
+  <!-- <form class="form">
+    <h3 class="form__heading">Восстановление</h3>
+    <div class="form__grid">
+      <div class="form__left-half"></div>
+      <div class="form__right-half">
+        <h4 class="form__input-name">E-mail / Имя пользователя</h4>
+        <input class="form__input" placeholder="your@e-mail.com">
+        <span class="form__error">Неверный адрес электронной почты</span>
+        <p class="form__recovery-text">
+          Укажите свой Email или имя пользователя.<br>Ссылку на создание нового пароля Вы получите<br>по электронной почте.
+        </p>
+        <button class="form__button form__button_submit form__button_recovery">Восстановить пароль</button>
+      </div>
+    </div>
+  </form> -->
+
+  <!-- FORM: SUBSCRIBE -->
+  <!-- <form class="form">
+    <h3 class="form__heading">Давайте познакомимся</h3>
+    <div class="form__grid">
+      <div class="form__left-half">
+        <h4 class="form__input-name">E-mail:</h4>
+        <input class="form__input" placeholder="your@e-mail.com">
+        <span class="form__error">Введите адрес электронной почты</span>
+        <label class="form__checkbox-alignment">
+          <div>
+            <input class="form__true-checkbox" type="checkbox" checked>
+            <div class="form__fake-checkbox"></div>
+          </div>
+          <p class="form__checkbox-description">I would like to receive information about new collections and<br>special
+            offers by the specified email</p>
+        </label>
+      </div>
+      <div class="form__right-half">
+        <h4 class="form__input-name">Ваше имя:</h4>
+        <input class="form__input" placeholder="Your pass">
+        <span class="form__error">Укажите Ваше имя</span>
+        <label class="form__checkbox-alignment">
+          <div>
+            <input class="form__true-checkbox" type="checkbox" checked>
+            <div class="form__fake-checkbox"></div>
+          </div>
+          <p class="form__checkbox-description">By clicking the "Checkout" button you consent to the processing<br>of
+            your
+            personal data</p>
+        </label>
+        <button class="form__button form__button_submit">Подписаться</button>
+      </div>
+    </div>
+  </form> -->
+
+
+  <!-- COOKIES -->
+  <!-- <div class="cookies">
+    <p class="cookies__text">
+      Our site, like most others, uses cookies and other similar technologies (pixel tags, etc.) to provide services
+      that best meet your interests and needs, as well as collect statistical and marketing information to analyze and
+      improve our services and sites.<br><br>By using this site, you agree to the use of cookies and other similar
+      technologies in accordance with this Notice.
+    </p>
+    <button class="cookies__close-button"></button>
+  </div> -->
+
+  <script src="./account.js"></script>
+
+</body>
+
+</html>
