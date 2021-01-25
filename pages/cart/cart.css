@@ -232,6 +232,132 @@ body {
   flex-direction: column;
 }
 
+.order__delivery{
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__delivery-methods {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* 
+.order__method
+.order__method-label
+.order__true-radio
+.order__fake-radio
+.order__delivery-description */
+
+.order__alignment {
+  display: flex;
+  flex-direction: row;
+}
+
+.order__input-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__input-heading {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #0F0F0F;
+}
+.order__input {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #0F0F0F;
+  border-style: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.order__input::placeholder {
+  color: #bdbdbd;
+}
+
+.order__checkbox-alignment {
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.order__true-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.order__fake-checkbox {
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/checkbox-cirlce.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.order__fake-checkbox::before {
+  position: absolute;
+  display: flex;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/checkbox-cross.svg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.order__true-checkbox:checked + 
+.order__fake-checkbox::before {
+  opacity: 1;
+}
+
+.order__checkbox-description {
+  margin-left: 24px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #0F0F0F;
+}
+
+
+.order__agreement {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0F0F0F;
+}
+
+.order__agreement-link {
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: underline;
+  color: #0F0F0F;
+}
+
+.order__submit-button {
+  width: 220px;
+  height: 48px;
+  margin-top: 40px;
+  margin-bottom: 54px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #FAFAFA;
+  border-radius: 33px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #0f0f0f;
+}
 
 
 
@@ -399,12 +525,6 @@ body {
 
 .form__checkbox-alignment {
   margin-top: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.form__checkbox-alignment {
   position: relative;
   display: flex;
   flex-direction: row;

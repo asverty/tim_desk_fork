@@ -59,8 +59,33 @@
     <form class="order">
 
       <div class="order__delivery">
-        <h3 class="order__input-heading">Способ доставки</h3>
-        <ul class="order__delivery-methods"></ul>
+        <h3 class="order__input-heading">Способ доставки:</h3>
+        <ul class="order__delivery-methods">
+          <li class="order__method">
+            <label class="order__method-label">
+              <input class="order__true-radio" type="radio" name="method">
+              <span class="order__fake-radio">Доставка по Москве</span>
+            </label>
+          </li>
+          <li class="order__method">
+            <label class="order__method-label">
+              <input class="order__true-radio" type="radio" name="method" checked>
+              <span class="order__fake-radio">Доставка по России</span>
+            </label>
+          </li>
+          <li class="order__method">
+            <label class="order__method-label">
+              <input class="order__true-radio" type="radio" name="method">
+              <span class="order__fake-radio">Самовывоз</span>
+            </label>
+          </li>
+          <li class="order__method">
+            <label class="order__method-label">
+              <input class="order__true-radio" type="radio" name="method">
+              <span class="order__fake-radio">Доставка по миру</span>
+            </label>
+          </li>
+        </ul>
         <p class="order__delivery-description"></p>
       </div>
 
@@ -85,9 +110,13 @@
         <input class="order__input" type="email" placeholder="symptom@gmai.com">
       </div>
 
-      <div class="order__checkbox-group">
-        <input type="checkbox">
-      </div>
+      <label class="order__checkbox-alignment">
+        <div>
+          <input class="order__true-checkbox" type="checkbox" checked>
+          <div class="order__fake-checkbox"></div>
+        </div>
+        <p class="order__checkbox-description">Подписаться на нас</p>
+      </label>
 
       <div class="order__alignment">
         <div class="order__input-group">
@@ -111,11 +140,16 @@
       </div>
 
       <p class="order__agreement">Your personal data will be used to process your orders, to make your website easier to
-        use, and for other purposes described in our <a class="order__link" href="../confidentiality/confidentiality.html">privacy policy</a>.</p>
+        use, and for other purposes described in our <a class="order__agreement-link"
+          href="../confidentiality/confidentiality.html">privacy policy</a>.</p>
 
-      <div class="order__checkbox-group">
-        <input type="checkbox">
-      </div>
+      <label class="order__checkbox-alignment">
+        <div>
+          <input class="order__true-checkbox" type="checkbox" checked>
+          <div class="order__fake-checkbox"></div>
+        </div>
+        <p class="order__checkbox-description">I have read and agree to the site rules, terms and conditions *</p>
+      </label>
 
       <button class="order__submit-button">Оплата</button>
 
