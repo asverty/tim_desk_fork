@@ -8,9 +8,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="robots" content="">
-  <title>Магазин «SYMPTOM» — современные украшения из серебра и золота</title>
-  <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <title>Желания — Магазин «SYMPTOM»</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
@@ -19,120 +18,88 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__fraction">
-      <a class="header__logo header__logo_white" href="./index.html"></a>
+      <a class="header__logo" href="../index.html"></a>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_white">БРЕНДЫ</button>
-      <button class="header__button header__button_white">КАТЕГОРИИ</button>
+      <button class="header__button">БРЕНДЫ</button>
+      <button class="header__button">КАТЕГОРИИ</button>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_white">ПОДПИСАТЬСЯ</button>
+      <button class="header__button">ПОДПИСАТЬСЯ</button>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_login header__button_white">ВОЙТИ</button>
-      <a class="header__button header__button_wishes header__button_white" href="./pages/wishes.html">ЖЕЛАНИЯ</a>
-      <a class="header__button header__button_cart header__button_white" href="./pages/cart.html">КОРЗИНА(00)</a>
+      <button class="header__button header__button_login">ВОЙТИ</button>
+      <a class="header__button header__button_wishes" href="./wishes.html">ЖЕЛАНИЯ</a>
+      <a class="header__button header__button_cart" href="./cart.html">КОРЗИНА(00)</a>
     </div>
   </header>
 
 
-  <!-- FULLPAGE SECTIONS -->
-  <main id="fullpage">
-    <section class="section section_1 active">
-      <div class="section__info">
-        <h2 class="section__heading">LIFE<br>MAGAZINE</h2>
-        <p class="section__paragraph section__paragraph_bottom">VERY IMPORTAN INFORMATION (VERY IMPORTANT INFORMATION)
-        </p>
-      </div>
-    </section>
+<!-- FILTERS -->
+  <main>
+    <div class="filters filters_categories">
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter" checked>
+        <span class="filters__fake-radio">Все</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Мои</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Кольца</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Браслеты</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Подвески</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Серьги</span>
+      </label>
+      <label class="filters__filter">
+        <input class="filters__true-radio" type="radio" name="filter">
+        <span class="filters__fake-radio">Заколки</span>
+      </label>
+    </div>
 
-    <section class="section section_2">
-      <div class="section__info section__info_flex-end">
-        <div class="section__heading-alignment">
-          <h2 class="section__heading">50% OFF</h2>
-          <span class="section__heading-span">TODAY ONLY</span>
+
+    <!-- CARDS -->
+    <section class="cards">
+      <div class="card card_vertical">
+        <img class="card__picture" src="../images/content/pendal-a.jpg" alt="A">
+        <div class="card__bottom">
+          <div class="card__info">
+            <div class="card__name-and-material">
+              <h3 class="card__name">A</h3>
+              <span class="card__material">(Gold/Silver)</span>
+            </div>
+            <span class="card__price">30 00000(Rub)</span>
+          </div>
+          <button class="like-button like-button_active"></button>
         </div>
-        <p class="section__paragraph">OTHER OBJECTS, ODOR OBJECTS, KOLCO CIGANSCOE, +5 HP IF YOU HAVE LOW MANA (The
-          following
-          brands participate in the promotion).</p>
       </div>
-    </section>
 
-    <section class="section section_3">
-      <div class="section__info">
-        <h2 class="section__heading">NOT<br>CONCEPT</h2>
-        <p class="section__paragraph section__paragraph_3">The concept is that there is no concept and this gives me
-          complete
-          freedom. I don’t
-          attach myself to anything, I have a lot of space for thought,because I’m still at the beginning of the way: I
-          study transforming and this is reflected in the design. I experiment a lot with forms, combine different
-          textures and minerals. This technique can be seen in rings with large stones. They can not be repeated,
-          because it uses natural stone, a copy of which can never be found. My jewelry is not distributed by gender -
-          each time it warms my soul to see a guy with a cuff or ring of my design.</p>
-        <p class="section__paragraph section__paragraph_bottom">NOW IN OUR STORE</p>
-      </div>
-    </section>
-
-    <section class="section section_4">
-      <div class="section__info">
-        <h2 class="section__heading">MAKE YOUR<br>OWN DESIGN</h2>
-        <p class="section__paragraph section__paragraph_bottom section__paragraph_short">Here you can order your own
-          jewelry, which
-          will be created according to your design.
-          Together we will agree on the terms of reference, estimated dates and cost of the product, and then sign an
-          agreement on its creation. We will help to realize any of your ideas - a jewelry can be made of silver or
-          gold, using precious and semiprecious stones, engraving or using enamel. The cost of the product depends on
-          the complexity of the work, as well as on the cost of the selected metals and precious and semiprecious
-          stones, but what cannot be counted in money is the joy of jewelry that will only be with you or the person to
-          whom you will give it.</p>
+      <div class="card card_square">
+        <img class="card__picture card__picture_square" src="../images/content/ring-prayer-silver.jpg" alt="Prayer">
+        <div class="card__bottom">
+          <div class="card__info">
+            <div class="card__name-and-material">
+              <h3 class="card__name">Prayer</h3>
+              <span class="card__material">(Silver)</span>
+            </div>
+            <span class="card__price">30 00000(Rub)</span>
+          </div>
+          <button class="like-button like-button_active"></button>
+        </div>
       </div>
     </section>
   </main>
-
-
-  <!-- SECTION COUNTER -->
-  <span class="counter"></span>
-
-
-  <!-- FOOTER -->
-  <!-- <footer class="footer">
-    <nav class="footer__left-half">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list-element"><a href="./pages/about_us.html" class="footer__nav-link">О нас</a>
-        </li>
-        <li class="footer__nav-list-element"><a href="./pages/contacts.html" class="footer__nav-link">Контакты</a>
-        </li>
-      </ul>
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list-element"><a href="./pages/warranty_and_returns.html"
-            class="footer__nav-link">Гарантия и возврат</a></li>
-        <li class="footer__nav-list-element"><a href="./pages/shipping_and_payment.html"
-            class="footer__nav-link">Доставка и оплата</a></li>
-        <li class="footer__nav-list-element"><a href="./pages/care_for_jewelry.html" class="footer__nav-link">Уход за
-            украшениями</a></li>
-      </ul>
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list-element"><a href="./pages/offer.html" class="footer__nav-link">Оферта</a></li>
-        <li class="footer__nav-list-element"><a href="./pages/confidentiality.html"
-            class="footer__nav-link">Конфиденциальность</a></li>
-      </ul>
-    </nav>
-
-    <ul class="footer__right-half">
-      <li class="footer__contact">
-        <h3 class="footer__contact-type">Телефон:</h3>
-        <a class="footer__contact-data" href="tel:+79151398563">+79151398563</a>
-      </li>
-      <li class="footer__contact">
-        <h3 class="footer__contact-type">E-mail:</h3>
-        <a class="footer__contact-data" href="mailto:hello@symptom.jewelry">HELLO@SYMPTOM.JEWELRY</a>
-      </li>
-      <li class="footer__contact">
-        <h3 class="footer__contact-type">Подписаться на нас:</h3>
-        <a class="footer__contact-data" href="https://www.instagram.com/symptom.jewelry/">INSTAGRAM</a>
-      </li>
-    </ul>
-  </footer> -->
 
 
   <!-- MENU: BRANDS -->
@@ -316,8 +283,7 @@
     <button class="cookies__close-button"></button>
   </div> -->
 
-  <script src="./node_modules/fullpage.js/dist/fullpage.js"></script>
-  <script src="./script.js"></script>
+  <script src="../script.js"></script>
 
 </body>
 
