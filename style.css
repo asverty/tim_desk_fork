@@ -1301,11 +1301,11 @@ button:hover, a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-.items {
+.cart-items {
   width: 100%;
 }
 
-.item {
+.cart-item {
   position: relative;
   width: 90%;
   height: 218px;
@@ -1313,42 +1313,42 @@ button:hover, a:hover {
   justify-content: space-between;
 }
 
-.item__info {
+.cart-item__info {
   z-index: 1;
   display: flex;
   flex-direction: column;
 }
 
-.item__spec {
+.cart-item__spec {
   font-size: 16px;
   line-height: 1.2;
   color: #0F0F0F;
   text-transform: uppercase;
 }
 
-.item__spec:first-child {
+.cart-item__spec:first-child {
   margin-top: 24px;
 }
 
 @media screen and (max-width: 1900px) {
-  .item__spec {
+  .cart-item__spec {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1516px) {
-  .item__spec {
+  .cart-item__spec {
     font-size: 12px;
   }
 }
 
 @media screen and (max-width: 1420px) {
-  .item__spec {
+  .cart-item__spec {
     font-size: 10px;
   }
 }
 
-.item__price {
+.cart-item__price {
   margin-top: 28px;
   font-size: 36px;
   line-height: 1.2;
@@ -1356,30 +1356,30 @@ button:hover, a:hover {
 }
 
 @media screen and (max-width: 1900px) {
-  .item__price {
+  .cart-item__price {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 1580px) {
-  .item__price {
+  .cart-item__price {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 1516px) {
-  .item__price {
+  .cart-item__price {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1420px) {
-  .item__price {
+  .cart-item__price {
     font-size: 20px;
   }
 }
 
-.item__image {
+.cart-item__image {
   z-index: 0;
   max-width: 100%;
   height: 100%;
@@ -1389,14 +1389,14 @@ button:hover, a:hover {
   background-repeat: no-repeat;
 }
 
-.item__buttons {
+.cart-item__buttons {
   z-index: 1;
   padding-top: 24px;
   display: flex;
   flex-direction: row;
 }
 
-.item__edit-button {
+.cart-item__edit-button {
   width: 79px;
   height: 48px;
   margin-right: 12px;
@@ -1411,7 +1411,7 @@ button:hover, a:hover {
   background-color: #FAFAFA;
 }
 
-.item__remove-button {
+.cart-item__remove-button {
   width: 48px;
   height: 48px;
   border: 1px solid #0F0F0F;
@@ -1423,29 +1423,6 @@ button:hover, a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .order {
   width: 100%;
@@ -1553,3 +1530,10 @@ button:hover, a:hover {
   display: flex;
   flex-direction: row;
 }
+
+
+
+
+
+/* ITEM PAGE */
+

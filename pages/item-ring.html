@@ -8,13 +8,13 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="robots" content="">
-  <title>Корзина — Магазин «SYMPTOM»</title>
+  <title>Кольцо Prayer — Магазин «SYMPTOM»</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
 
-
+  
   <!-- HEADER -->
   <header class="header">
     <div class="header__fraction">
@@ -35,128 +35,9 @@
   </header>
 
 
-  <!-- CART -->
-  <main class="cart">
-    <div class="cart-items">
-      <h1 class="heading">2 товара</h1>
-      <div class="cart-item">
-        <div class="cart-item__info">
-          <span class="cart-item__spec">Anna Maslovskaya</span>
-          <span class="cart-item__spec">Prayer</span>
-          <span class="cart-item__spec">Material: Gold</span>
-          <span class="cart-item__spec">Size: 7.5</span>
-          <span class="cart-item__price">19 000 Rub.</span>
-        </div>
-        <img class="cart-item__image" src="../images/content/ring-prayer.jpg" alt="">
-        <div class="cart-item__buttons">
-          <button class="cart-item__edit-button">Edit</button>
-          <button class="cart-item__remove-button"></button>
-        </div>
-      </div>
-      <div class="cart-item">
-        <div class="cart-item__info">
-          <span class="cart-item__spec">38</span>
-          <span class="cart-item__spec">Playroe</span>
-          <span class="cart-item__spec">Material: Silver</span>
-          <span class="cart-item__spec">Size: 8</span>
-          <span class="cart-item__price">10 000 Rub.</span>
-        </div>
-        <img class="cart-item__image" src="../images/content/ring-playroe.jpg" alt="">
-        <div class="cart-item__buttons">
-          <button class="cart-item__edit-button">Edit</button>
-          <button class="cart-item__remove-button"></button>
-        </div>
-      </div>
-    </div>
+  <!-- ITEM PAGE -->
+  <main>
 
-    <form class="order">
-      <h4 class="input__heading">Способ доставки:</h4>
-      <div class="delivery">
-        <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
-          <div class="delivery__fake-radio delivery__fake-radio_moscow">Доставка по Москве</div>
-        </label>
-        <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method" checked>
-          <div class="delivery__fake-radio delivery__fake-radio_russia">Доставка по России</div>
-        </label>
-        <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
-          <span class="delivery__fake-radio delivery__fake-radio_pickup">Самовывоз</span>
-        </label>
-        <label class="delivery__method">
-          <input class="delivery__true-radio" type="radio" name="method">
-          <span class="delivery__fake-radio delivery__fake-radio_worldwide">Доставка по миру</span>
-        </label>
-      </div>
-      <p class="paragraph">Part of your order is in stock and will be delivered within 1-5 business days. Order items
-        will be delivered within 4-5 weeks.</p>
-      <div class="order__alignment">
-        <div class="input input_order-s">
-          <h3 class="input__heading">Имя:</h3>
-          <input class="input__field" type="text" placeholder="Имя">
-          <span class="input__error">Укажите имя</span>
-        </div>
-        <div class="input input_order-s">
-          <h3 class="input__heading">Фамилия:</h3>
-          <input class="input__field" type="text" placeholder="Фамилия">
-          <span class="input__error">Укажите фамилию</span>
-        </div>
-      </div>
-      <div class="input input_order-m">
-        <h3 class="input__heading">Телефон:</h3>
-        <input class="input__field" type="tel" placeholder="+7 (000) 000 00 00">
-        <span class="input__error">Введите телефон</span>
-      </div>
-      <div class="input input_order-m">
-        <h3 class="input__heading">E-mail:</h3>
-        <input class="input__field" type="email" placeholder="symptom@gmai.com">
-        <span class="input__error">Укажите почту</span>
-      </div>
-      <label class="checkbox checkbox_order">
-        <div>
-          <input class="checkbox__true-checkbox" type="checkbox" checked>
-          <div class="checkbox__fake-checkbox"></div>
-        </div>
-        <p class="checkbox__description">Подписаться на нас</p>
-      </label>
-      <div class="order__alignment">
-        <div class="input input_order-s">
-          <h3 class="input__heading">Город:</h3>
-          <input class="input__field" type="text" placeholder="Город">
-          <span class="input__error">Укажите город</span>
-        </div>
-        <div class="input input_order-l">
-          <h3 class="input__heading">Адрес:</h3>
-          <input class="input__field" type="text" placeholder="Наб. Тараса Шевченко, д3 к3">
-          <span class="input__error">Введите адрес</span>
-        </div>
-      </div>
-      <div class="input input_order-s">
-        <h3 class="input__heading">Почтовый индекс:</h3>
-        <input class="input__field" type="number" placeholder="121248">
-        <span class="input__error">Укажите индекс</span>
-      </div>
-      <div class="input input_order-s">
-        <h3 class="input__heading">Промокод:</h3>
-        <input class="input__field" type="number" placeholder="000000">
-        <span class="input__error">Укажите индекс</span>
-      </div>
-      <p class="paragraph paragraph_order">Your personal data will be used to process your orders, to make your website
-        easier<br>to use,
-        and for other purposes described in our <a class="paragraph__link" href="./confidentiality.html">privacy
-          policy</a>.</p>
-      <label class="checkbox checkbox_order">
-        <div>
-          <input class="checkbox__true-checkbox" type="checkbox" checked>
-          <div class="checkbox__fake-checkbox"></div>
-        </div>
-        <p class="checkbox__description">I have read and agree to the site rules, terms and conditions *</p>
-      </label>
-      <button class="black-button black-button_order">Оплата</button>
-
-
-    </form>
   </main>
 
 
