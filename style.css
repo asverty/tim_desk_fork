@@ -1431,7 +1431,7 @@ button:hover, a:hover {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(../images/content/brand-grid-picture.jpg);
+  background-image: url(./images/content/brand-grid-picture.jpg);
   background-size: cover;
 }
 
