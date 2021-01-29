@@ -1819,7 +1819,7 @@ button:hover, a:hover {
   box-sizing: border-box;
   outline: none;
   background-color: #FAFAFA;
-  background-image: url(../../images/edit-button-cross.svg);
+  background-image: url(./images/edit-button-cross.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
