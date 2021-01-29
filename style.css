@@ -238,6 +238,12 @@ button:hover, a:hover {
   border-radius: 33px;
 }
 
+@media screen and (max-width: 1580px) {
+  .back-button {
+    height: 44px;
+  }
+}
+
 .back-button__arrow {
   width: 5px;
   height: 10px;
@@ -268,6 +274,13 @@ button:hover, a:hover {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1580px) {
+  .circle-like-button {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .circle-like-button_active {
@@ -539,6 +552,13 @@ button:hover, a:hover {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 1580px) {
+  .round-sizes__fake-radio {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .round-sizes__fake-radio:hover {
   cursor: pointer;
 }
@@ -557,6 +577,13 @@ button:hover, a:hover {
   background-size: contain;
 }
 
+@media screen and (max-width: 1580px) {
+  .round-sizes__fake-radio::before {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .round-sizes__true-radio:checked + 
 .round-sizes__fake-radio::before {
   opacity: 1;
@@ -573,20 +600,15 @@ button:hover, a:hover {
 
 .oval-sizes {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin-bottom: 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 86px);
+  grid-gap: 12px;
 }
 
 .oval-sizes__size {
   position: relative;
-  margin-right: 12px;
 }
-
-.oval-sizes__size:last-child {
-  margin-right: 0;
-}
-
 .oval-sizes__true-radio {
   position: absolute; 
   top: 0;
@@ -600,8 +622,16 @@ button:hover, a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
   border: 1px solid #0f0f0f;
   border-radius: 33px;
+}
+
+@media screen and (max-width: 1580px) {
+  .oval-sizes__fake-radio {
+    height: 44px;
+  }
 }
 
 .oval-sizes__fake-radio:hover {
@@ -622,14 +652,15 @@ button:hover, a:hover {
   background-size: contain;
 }
 
+@media screen and (max-width: 1580px) {
+  .oval-sizes__fake-radio::before {
+    height: 44px;
+  }
+}
+
 .oval-sizes__true-radio:checked + 
 .oval-sizes__fake-radio::before {
   opacity: 1;
-}
-
-.oval-sizes__text {
-  font-size: 16px;
-  text-transform: uppercase;
 }
 
 
@@ -640,6 +671,7 @@ button:hover, a:hover {
 
 .sides {
   width: 100%;
+  margin-bottom: 7%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -671,6 +703,12 @@ button:hover, a:hover {
   border-radius: 33px;
 }
 
+@media screen and (max-width: 1580px) {
+  .sides__fake-radio {
+    height: 44px;
+  }
+}
+
 .sides__fake-radio:hover {
   cursor: pointer;
 }
@@ -687,6 +725,12 @@ button:hover, a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (max-width: 1580px) {
+  .sides__fake-radio::before {
+    height: 44px;
+  }
 }
 
 .sides__true-radio:checked + 
@@ -712,6 +756,10 @@ button:hover, a:hover {
   align-items: center;
 }
 
+.materials_bracelet {
+  margin-bottom: 7%;
+}
+
 .materials__material {
   position: relative;
   margin-right: 12px;
@@ -734,6 +782,12 @@ button:hover, a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 33px;
+}
+
+@media screen and (max-width: 1580px) {
+  .materials__fake-radio {
+    height: 44px;
+  }
 }
 
 .materials__fake-radio_gold {
@@ -765,6 +819,12 @@ button:hover, a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (max-width: 1580px) {
+  .materials__fake-radio::before {
+    height: 44px;
+  }
 }
 
 .materials__fake-radio_gold::before {
@@ -1893,7 +1953,8 @@ button:hover, a:hover {
 
 .item__info {
   z-index: 2;
-  width: 22.5%;
+  max-width: 22.5%;
+  min-width: 360px;
   display: flex;
   flex-direction: column;
 }
@@ -1904,9 +1965,22 @@ button:hover, a:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1580px) {
+  .item__brand {
+    font-size: 28px;
+  }
+}
+
 .item__name {
   margin-bottom: 8%;
   font-size: 36px;
+}
+
+@media screen and (max-width: 1580px) {
+  .item__name {
+    margin-bottom: 3%;
+    font-size: 28px;
+  }
 }
 
 .item__description {
@@ -1914,13 +1988,25 @@ button:hover, a:hover {
   font-size: 14px;
 }
 
+@media screen and (max-width: 1580px) {
+  .item__description {
+    font-size: 12px;
+  }
+}
+
 .item__status {
+  position: absolute;
+  top: 54%;
+  left: 3%;
   margin-bottom: 3%;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .item__price {
+  position: absolute;
+  top: 58%;
+  left: 3%;
   font-size: 36px;
 }
 
@@ -1930,6 +2016,12 @@ button:hover, a:hover {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1580px) {
+  .item__shipping {
+    font-size: 14px;
+  }
 }
 
 .item__image-wrapper {
@@ -1950,6 +2042,24 @@ button:hover, a:hover {
   max-height: 100%;
 }
 
+.item__image-wrapper_vertical {
+  position: fixed;
+  top: -10%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 50vw;
+  height: 50vw;
+  margin: -5vh auto auto auto;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item__image_vertical {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .item__order {
   z-index: 2;
   width: 340px;
@@ -1961,6 +2071,12 @@ button:hover, a:hover {
   margin-bottom: 12px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1580px) {
+  .item__radio-heading {
+    font-size: 14px;
+  }
 }
 
 .item__radio-heading:first-of-type {
@@ -1978,8 +2094,22 @@ button:hover, a:hover {
   display: flex;
 }
 
+.item__buttons_bracelet {
+  margin-top: 40%;
+}
+
+.item__buttons_clothes {
+  margin-top: 60%;
+}
+
 .item__preorder-info {
   font-size: 14px;
+}
+
+@media screen and (max-width: 1580px) {
+  .item__preorder-info {
+    font-size: 12px;
+  }
 }
 
 .slide {
