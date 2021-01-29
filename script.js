@@ -16,7 +16,7 @@ const myFullpage = new fullpage('#fullpage', {
 	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
-	showActiveTooltip: false,
+	showActiveTooltip: true,
 	slidesNavigation: false,
 	slidesNavPosition: 'bottom',
 
@@ -53,9 +53,9 @@ const myFullpage = new fullpage('#fullpage', {
 	recordHistory: true,
 
 	//Design
-	controlArrows: true,
+	controlArrows: false,
 	verticalCentered: true,
-	sectionsColor : ['#ffffff', '#ffffff', '#ffffff', '#ffffff'],
+	sectionsColor : ['#FAFAFA', '#FAFAFA', '#FAFAFA', '#FAFAFA'],
 	paddingTop: '0',
 	paddingBottom: '0',
 	fixedElements: '#header, .footer',

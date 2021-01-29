@@ -9,12 +9,13 @@
   <meta name="keywords" content="">
   <meta name="robots" content="">
   <title>Кольцо Prayer — Магазин «SYMPTOM»</title>
+  <link rel="stylesheet" href="../node_modules/fullpage.js/dist/fullpage.css" />
   <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body>
 
-  
+
   <!-- HEADER -->
   <header class="header">
     <div class="header__fraction">
@@ -36,10 +37,93 @@
 
 
   <!-- ITEM PAGE -->
-  <main>
-
+  <main id="fullpage">
+    <div class="section">
+      <div class="slide active"></div>
+      <!-- <div class="slide"><img class="slide__image" src="../images/content/fullpage-section-2.jpg" alt=""></div>
+      <div class="slide"><img class="slide__image" src="../images/content/fullpage-section-3.jpg" alt=""></div>
+      <div class="slide"><img class="slide__image" src="../images/content/fullpage-section-4.jpg" alt=""></div> -->
+    </div>
   </main>
 
+  <div class="item">
+    <div class="item__info">
+      <button class="back-button">
+        <div class="back-button__arrow"></div><span class="back-button__text">К бренду</span>
+      </button>
+      <h1 class="item__brand">Anna Maslovskaya</h1>
+      <h2 class="item__name">ring "Prayer"</h2>
+      <p class="item__description">Кольцо-печатка из жёлтого золота 585 пробы. Находится в шкатулке из оникса,
+        упакованной по японскому методу фуросики в платок из хлопка.</p>
+      <span class="item__status">In stock</span>
+      <span class="item__price">19000 Rub.</span>
+      <a href="./shipping_and_payment.html" class="item__shipping">Доставка и возврат</a>
+    </div>
+
+    <div class="item__image-wrapper">
+      <img class="item__image" src="../images/content/ring-prayer.jpg" alt="Prayer">
+    </div>
+
+    <div class="item__order">
+      <h4 class="item__radio-heading">Материал:</h4>
+      <div class="materials">
+        <label class="materials__material">
+          <input class="materials__true-radio" type="radio" name="material">
+          <span class="materials__fake-radio materials__fake-radio_gold">Gold</span>
+        </label>
+        <label class="materials__material">
+          <input class="materials__true-radio" type="radio" name="material">
+          <span class="materials__fake-radio materials__fake-radio_bronze">Bronze</span>
+        </label>
+      </div>
+      <h4 class="item__radio-heading">Выберите размер:</h4>
+      <div class="round-sizes">
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">7.5</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">8</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size"checked>
+          <span class="round-sizes__fake-radio">9</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">9.5</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">10</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">10.5</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">11</span>
+        </label>
+        <label class="round-sizes__size">
+          <input class="round-sizes__true-radio" type="radio" name="size">
+          <span class="round-sizes__fake-radio">12</span>
+        </label>
+      </div>
+      <p class="item__preorder-info">
+        Размер который вы выбрали отсутсвует в наличии. Но вы можете оформить предзаказ!
+        После оформления заказа мы свяжемся с вами, чтобы обсудить все важные детали.
+      </p>
+      <div class="item__buttons">
+        <button class="circle-like-button"></button>
+        <button class="black-button">Предзаказ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION COUNTER -->
+  <span class="counter counter_item"></span>
 
   <!-- MENU: BRANDS -->
   <!-- <div class="menu">
@@ -222,6 +306,7 @@
     <button class="cookies__close-button"></button>
   </div> -->
 
+  <script src="../node_modules/fullpage.js/dist/fullpage.js"></script>
   <script src="../script.js"></script>
 
 </body>
