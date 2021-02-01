@@ -1,14 +1,3 @@
-// DOM ELEMENTS
-const counter = document.querySelector('.counter');
-const footer = document.querySelector('.footer');
-const lastSection = Array.from(document.querySelectorAll('.section')).pop();
-
-
-// SECTION COUNTER
-const numberOfSections = Array.from(document.querySelectorAll('.section')).length;
-counter.textContent = `1/${numberOfSections}`;
-
-
 // FULLPAGE.JS
 const myFullpage = new fullpage('#fullpage', {
 	//Navigation
@@ -76,9 +65,7 @@ const myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){
-		counter.textContent = `${destination.index + 1}/${numberOfSections}`;
-	},
+	onLeave: function(origin, destination, direction){},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},
@@ -86,52 +73,4 @@ const myFullpage = new fullpage('#fullpage', {
 	afterResponsive: function(isResponsive){},
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
-});
-
-
-// FOOTER
-function showFooter() {
-	footer.classList.remove('footer_hidden');
-	myFullpage.setAllowScrolling(false, 'up');
-	myFullpage.setKeyboardScrolling(false, 'up');
-};
-
-function hideFooter() {
-	footer.classList.add('footer_hidden');
-	setTimeout(() => {
-		myFullpage.setAllowScrolling(true, 'up');
-		myFullpage.setKeyboardScrolling(true, 'up');
-	}, 300);
-};
-
-// open footer via keyboard
-document.addEventListener('keydown', event => {
-	let activeSection = myFullpage.getActiveSection();
-	if ((activeSection.isLast) && (event.key == 'ArrowDown')) showFooter();
-});
-
-// close footer via keyboard
-document.addEventListener('keydown', event => {
-	let activeSection = myFullpage.getActiveSection();
-	if ((activeSection.isLast) && (event.key == 'ArrowUp')) hideFooter();
-});
-
-// open footer via mouse wheel
-lastSection.addEventListener('wheel', event => {
-	if (event.wheelDelta < 0) showFooter();
-});
-
-// close footer via mouse wheel (if cursor is on section)
-lastSection.addEventListener('wheel', event => {
-	if (event.wheelDelta > 0) hideFooter();
-});
-
-// close footer via mouse wheel (if cursor is on footer itself)
-footer.addEventListener('wheel', event => {
-	if (event.wheelDelta > 0) hideFooter();
-});
-
-// close footer via click on section
-lastSection.addEventListener('click', () => {
-	if (!footer.classList.contains('footer_hidden')) hideFooter();
 });

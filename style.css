@@ -44,6 +44,16 @@ input::placeholder {
   color: #bdbdbd;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 button:hover, a:hover {
   cursor: pointer;
 }
@@ -1246,11 +1256,23 @@ button:hover, a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #0F0F0F;
+  transition: bottom 0.3s ease-out;
 }
 
 @media screen and (max-width: 1900px) {
   .footer {
     height: 380px;
+  }
+}
+
+.footer_hidden {
+  bottom: -508px;
+  transition: bottom 0.3s ease-out;
+}
+
+@media screen and (max-width: 1900px) {
+  .footer_hidden {
+    bottom: -380px;
   }
 }
 
