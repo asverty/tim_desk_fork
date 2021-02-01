@@ -19,19 +19,19 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__fraction">
-      <a class="header__logo header__logo_white" href="./index.html"></a>
+      <a id="header-logo" class="header__logo header__logo_white" href="./index.html"></a>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_white">БРЕНДЫ</button>
-      <button class="header__button header__button_white">КАТЕГОРИИ</button>
+      <button id="header-brands-button" class="header__button header__button_white">БРЕНДЫ</button>
+      <button id="header-categories-button" class="header__button header__button_white">КАТЕГОРИИ</button>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_white">ПОДПИСАТЬСЯ</button>
+      <button id="header-subscribe-button" class="header__button header__button_white">ПОДПИСАТЬСЯ</button>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_login header__button_white">ВОЙТИ</button>
-      <a class="header__button header__button_wishes header__button_white" href="./pages/wishes.html">ЖЕЛАНИЯ</a>
-      <a class="header__button header__button_cart header__button_white" href="./pages/cart.html">КОРЗИНА(00)</a>
+      <button id="header-login-button" class="header__button header__button_login header__button_white">ВОЙТИ</button>
+      <a id="header-wishes-button" class="header__button header__button_wishes header__button_white" href="./pages/wishes.html">ЖЕЛАНИЯ</a>
+      <a id="header-cart-button" class="header__button header__button_cart header__button_white" href="./pages/cart.html">КОРЗИНА(00)</a>
     </div>
   </header>
 
@@ -136,7 +136,7 @@
 
 
   <!-- MENU: BRANDS -->
-  <!-- <div class="menu">
+  <div id="brands-menu" class="menu menu_hidden">
     <nav class="menu__left-half">
       <ul>
         <li class="menu__list-element"><a href="" class="menu__link">Other Objects</a></li>
@@ -153,11 +153,11 @@
       </ul>
     </nav>
     <div class="menu__right-half menu__right-half_brands"></div>
-  </div> -->
+  </div>
 
 
   <!-- MENU: CATEGORIES -->
-  <!-- <div class="menu">
+  <div id="categories-menu" class="menu menu_hidden">
     <nav class="menu__left-half">
       <ul>
         <li class="menu__list-element"><a href="" class="menu__link">Подвески</a></li>
@@ -172,11 +172,11 @@
       </ul>
     </nav>
     <div class="menu__right-half menu__right-half_categories"></div>
-  </div> -->
+  </div>
 
 
   <!-- FORM: SIGN IN -->
-  <!-- <form class="form">
+  <form id="signin-form" class="form form_hidden">
     <h3 class="heading heading_form">Регистрация</h3>
     <div class="form__grid">
 
@@ -214,11 +214,11 @@
         <button class="black-button">Регистрация</button>
       </div>
     </div>
-  </form> -->
+  </form>
 
 
   <!-- FORM: LOG IN -->
-  <!-- <form class="form">
+  <form id="login-form" class="form form_hidden">
     <h3 class="heading heading_form">Вход</h3>
     <div class="form__grid">
 
@@ -228,7 +228,7 @@
           <input class="input__field" type="email" placeholder="your@e-mail.com">
           <span class="input__error">Некорректный адрес электронной почты</span>
         </div>
-        <button class="hollow-button">Регистрация</button>
+        <button id="header-signin-button" class="hollow-button">Регистрация</button>
       </div>
 
       <div class="form__right-half">
@@ -238,13 +238,13 @@
           <span class="input__error">Пароль слишком короткий</span>
         </div>
         <button class="black-button">Вход</button>
-        <button class="form__recovery-button">Забыли пароль?</button>
+        <button id="header-forgot-password-button" class="form__recovery-button">Забыли пароль?</button>
       </div>
     </div>
-  </form> -->
+  </form>
 
   <!-- FORM: PASSWORD RECOVERY -->
-  <!-- <form class="form">
+  <form id="password-recovery-form" class="form form_hidden">
     <h3 class="heading heading_form">Восстановление</h3>
     <div class="form__grid">
       <div class="form__left-half"></div>
@@ -260,11 +260,11 @@
         <button class="black-button">Восстановить пароль</button>
       </div>
     </div>
-  </form> -->
+  </form>
 
 
   <!-- FORM: SUBSCRIBE -->
-  <!-- <form class="form">
+  <form id="subscribe-form" class="form form_hidden">
     <h3 class="heading heading_form">Давайте познакомимся</h3>
     <div class="form__grid">
 
@@ -302,11 +302,11 @@
         <button class="black-button">Подписаться</button>
       </div>
     </div>
-  </form> -->
+  </form>
 
 
   <!-- COOKIES -->
-  <!-- <div class="cookies">
+  <div class="cookies cookies_hidden">
     <p class="paragraph paragraph_cookies">
       Our site, like most others, uses cookies and other similar technologies (pixel tags, etc.) to provide services
       that best meet your interests and needs, as well as collect statistical and marketing information to analyze and
@@ -314,7 +314,7 @@
       technologies in accordance with this Notice.
     </p>
     <button class="cookies__close-button"></button>
-  </div> -->
+  </div>
 
   <script src="./node_modules/fullpage.js/dist/fullpage.js"></script>
   <script src="./index.js"></script>

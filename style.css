@@ -952,12 +952,18 @@ button:hover, a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #FAFAFA;
+  transition: visibility 0.3s, opacity 0.3s ease-out;
 }
 
 @media screen and (max-width: 1900px) {
   .menu {
     height: 444px;
   }
+}
+
+.menu_hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu__left-half {
@@ -1029,6 +1035,12 @@ button:hover, a:hover {
   padding-right: 3%;
   padding-left: 3%;
   background-color: #FAFAFA;
+  transition: visibility 0.3s, opacity 0.3s ease-out;
+}
+
+.form_hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .form__grid {
@@ -1087,6 +1099,10 @@ button:hover, a:hover {
   .cookies {
     height: 380px;
   }
+}
+
+.cookies_hidden {
+  display: none;
 }
 
 .cookies__close-button {
