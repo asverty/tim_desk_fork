@@ -158,6 +158,96 @@ document.addEventListener('keydown', event => {
 
 
 
+// MENUS
+const brandMenuImage = document.querySelector('#brand-menu-image');
+const categoriesMenuImage = document.querySelector('#categories-menu-image');
+
+const brandsList = [
+	{
+		element: document.querySelector('#other-objects-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#sub-rosa-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#black-form-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#hubris-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#arha-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#brand-1991-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#atauchi-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#odor-objects-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#anna-maslovskaya-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	}
+];
+
+brandsList.forEach(brand => {
+	brand.element.addEventListener('mouseover', () => {
+		brandMenuImage.style.backgroundImage = brand.image;
+	});
+});
+
+const categoriesList = [
+	{
+		element: document.querySelector('#pendals-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#earrings-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#rings-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#bracelets-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#hairpins-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#perfume-link'),
+		image: 'url(./images/content/categories-bg.jpg)'
+	},
+	{
+		element: document.querySelector('#clothes-link'),
+		image: 'url(./images/content/brands-bg.jpg)'
+	}
+];
+
+categoriesList.forEach(category => {
+	category.element.addEventListener('mouseover', () => {
+		categoriesMenuImage.style.backgroundImage = category.image;
+	});
+});
+
+
+
+
+
 // FOOTER
 
 const footer = document.querySelector('.footer');
