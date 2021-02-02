@@ -158,10 +158,14 @@ button:hover, a:hover {
 .black-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #FAFAFA;
   border-radius: 33px;
   background-color: #0F0F0F;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -184,10 +188,14 @@ button:hover, a:hover {
 .white-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #0f0f0f;
   border-radius: 33px;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -201,10 +209,14 @@ button:hover, a:hover {
 .hollow-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #0f0f0f;
   border: 1px solid #0f0f0f;
   border-radius: 33px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -227,6 +239,7 @@ button:hover, a:hover {
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1900px) {
@@ -246,6 +259,7 @@ button:hover, a:hover {
   display: flex;
   border: 1px solid #0f0f0f;
   border-radius: 33px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -284,6 +298,7 @@ button:hover, a:hover {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -913,6 +928,7 @@ button:hover, a:hover {
   background-color: transparent;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .header__button:last-child {
@@ -1065,6 +1081,7 @@ button:hover, a:hover {
 .form__recovery-button {
   margin-top: 132px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .form__recovery-text {

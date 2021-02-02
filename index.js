@@ -9,6 +9,7 @@ counter.textContent = `1/${numberOfSections}`;
 
 
 // FULLPAGE.JS
+const sections = document.querySelectorAll('.section');
 const myFullpage = new fullpage('#fullpage', {
 	//Navigation
 	menu: '#menu',
@@ -101,8 +102,6 @@ const headerSubscribeButton = document.querySelector('#header-subscribe-button')
 const headerLogInButton = document.querySelector('#header-login-button');
 const headerSignInButton = document.querySelector('#header-signin-button');
 const headerForgotPasswordButton = document.querySelector('#header-forgot-password-button');
-const headerWishesButton = document.querySelector('#header-wishes-button');
-const headerCartButton = document.querySelector('#header-cart-button');
 const menus = document.querySelectorAll('.menu');
 const brandsMenu = document.querySelector('#brands-menu');
 const categoriesMenu = document.querySelector('#categories-menu');
@@ -111,7 +110,6 @@ const signInForm = document.querySelector('#signin-form');
 const logInForm = document.querySelector('#login-form');
 const subscribeForm = document.querySelector('#subscribe-form');
 const passwordRecoveryForm = document.querySelector('#password-recovery-form');
-const sections = document.querySelectorAll('.section');
 
 function headerTurnsBlack() {
 	headerLogo.classList.remove('header__logo_white');
