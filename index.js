@@ -248,6 +248,63 @@ categoriesList.forEach(category => {
 
 
 
+// COOKIES
+
+const cookiesPopup = document.querySelector('#cookies-popup');
+const cookiesCloseButton = document.querySelector('#cookies-close-button');
+const showCookies = () => cookiesPopup.classList.remove('cookies_hidden');
+const hideCookies = () => cookiesPopup.classList.add('cookies_hidden');
+
+function getCookie(name) {
+	let matches = document.cookie.match(new RegExp(
+		"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+	));
+	return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function setCookie(name, value, options = {}) {
+	options = {
+		path: '/',
+		...options
+	};
+
+	if (options.expires instanceof Date) {
+		options.expires = options.expires.toUTCString();
+	}
+
+	let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+	for (let optionKey in options) {
+		updatedCookie += "; " + optionKey;
+		let optionValue = options[optionKey];
+		if (optionValue !== true) {
+			updatedCookie += "=" + optionValue;
+		}
+	}
+
+	document.cookie = updatedCookie;
+}
+
+function areCookiesAccepted() {
+	let isAccepted = getCookie('cookiesAccepted');
+	if (isAccepted == 'true') {
+		hideCookies();
+	} else {
+		showCookies();
+	}
+}
+
+cookiesCloseButton.addEventListener('click', () => {
+	setCookie('cookiesAccepted', 'true', {'max-age': 8000000});
+	hideCookies();
+});
+
+areCookiesAccepted();
+
+
+
+
+
 // FOOTER
 
 const footer = document.querySelector('.footer');
