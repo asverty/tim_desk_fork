@@ -9,6 +9,7 @@ counter.textContent = `1/${numberOfSections}`;
 
 
 // FULLPAGE.JS
+
 const sections = document.querySelectorAll('.section');
 const myFullpage = new fullpage('#fullpage', {
 	//Navigation
@@ -159,6 +160,7 @@ document.addEventListener('keydown', event => {
 
 
 // MENUS
+
 const brandMenuImage = document.querySelector('#brand-menu-image');
 const categoriesMenuImage = document.querySelector('#categories-menu-image');
 
