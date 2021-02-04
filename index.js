@@ -159,89 +159,155 @@ document.addEventListener('keydown', event => {
 
 
 
-// MENUS
+// BRANDS MENU
 
-const brandMenuImage = document.querySelector('#brand-menu-image');
-const categoriesMenuImage = document.querySelector('#categories-menu-image');
-
+const brandsMenuImage = document.querySelector('#brand-menu-image');
 const brandsList = [
 	{
-		element: document.querySelector('#other-objects-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: '1991',
+		menuLink: '#link-to-1991',
+		image: 'url(./images/content/brands-1991.jpg)',
 	},
 	{
-		element: document.querySelector('#sub-rosa-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Anna Maslovskaya',
+		menuLink: '#link-to-anna-maslovskaya',
+		image: 'url(./images/content/brands-anna-maslovskaya.jpg)',
 	},
 	{
-		element: document.querySelector('#black-form-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'Arha',
+		menuLink: '#link-to-arha',
+		image: 'url(./images/content/brands-arha.jpg)',
 	},
 	{
-		element: document.querySelector('#hubris-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Atauchi',
+		menuLink: '#link-to-atauchi',
+		image: 'url(./images/content/brands-atauchi.jpg)',
 	},
 	{
-		element: document.querySelector('#arha-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'Behurr',
+		menuLink: null,
+		image: 'url(./images/content/brands-behurr.jpg)',
 	},
 	{
-		element: document.querySelector('#brand-1991-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'BLACK FORM',
+		menuLink: '#link-to-black-form',
+		image: 'url(./images/content/brands-black-form.jpg)',
 	},
 	{
-		element: document.querySelector('#atauchi-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'HUBRIS',
+		menuLink: '#link-to-hubris',
+		image: 'url(./images/content/brands-hubris.jpg)',
 	},
 	{
-		element: document.querySelector('#odor-objects-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Liberte',
+		menuLink: null,
+		image: 'url(./images/content/brands-liberte.jpg)',
 	},
 	{
-		element: document.querySelector('#anna-maslovskaya-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
-	}
+		name: 'Natalie Tonkal',
+		menuLink: null,
+		image: 'url(./images/content/brands-natalie-tonkal.jpg)',
+	},
+	{
+		name: 'NOT CONCEPT',
+		menuLink: null,
+		image: 'url(./images/content/brands-not-concept.jpg)',
+	},
+	{
+		name: 'Odor Objects',
+		menuLink: '#link-to-odor-objects',
+		image: 'url(./images/content/brands-odor-objects.jpg)',
+	},
+	{
+		name: 'Other Objects',
+		menuLink: '#link-to-other-objects',
+		image: 'url(./images/content/brands-other-objects.jpg)',
+	},
+	{
+		name: 'Perfert',
+		menuLink: null,
+		image: 'url(./images/content/brands-perfert.jpg)',
+	},
+	{
+		name: 'Perfume Opera',
+		menuLink: null,
+		image: 'url(./images/content/brands-perfume-opera.jpg)',
+	},
+	{
+		name: 'Sands',
+		menuLink: null,
+		image: 'url(./images/content/brands-sands.jpg)',
+	},
+	{
+		name: 'Sub Rosa',
+		menuLink: '#link-to-sub-rosa',
+		image: 'url(./images/content/brands-sub-rosa.jpg)',
+	},
 ];
 
-brandsList.forEach(brand => {
-	brand.element.addEventListener('mouseover', () => {
-		brandMenuImage.style.backgroundImage = brand.image;
+const brandsInMenu = brandsList.filter(brand => {
+	return brand.menuLink !== null;
+});
+
+brandsInMenu.forEach(brand => {
+	let element = document.querySelector(brand.menuLink);
+	element.addEventListener('mouseover', () => {
+		brandsMenuImage.style.backgroundImage = brand.image;
 	});
 });
 
+
+
+
+
+// CATEGORIES MENU
+
+const categoriesMenuImage = document.querySelector('#categories-menu-image');
 const categoriesList = [
 	{
-		element: document.querySelector('#pendals-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'Подвески',
+		menuLink: '#link-to-pendals',
+		image: 'url(./images/content/brands-1991.jpg)',
 	},
 	{
-		element: document.querySelector('#earrings-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Серьги',
+		menuLink: '#link-to-earrings',
+		image: 'url(./images/content/brands-anna-maslovskaya.jpg)',
 	},
 	{
-		element: document.querySelector('#rings-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'Кольца',
+		menuLink: '#link-to-rings',
+		image: 'url(./images/content/brands-arha.jpg)',
 	},
 	{
-		element: document.querySelector('#bracelets-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Браслеты',
+		menuLink: '#link-to-bracelets',
+		image: 'url(./images/content/brands-atauchi.jpg)',
 	},
 	{
-		element: document.querySelector('#hairpins-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
+		name: 'Заколки',
+		menuLink: '#link-to-hairpins',
+		image: 'url(./images/content/brands-behurr.jpg)',
 	},
 	{
-		element: document.querySelector('#perfume-link'),
-		image: 'url(./images/content/categories-bg.jpg)'
+		name: 'Парфюм',
+		menuLink: '#link-to-perfume',
+		image: 'url(./images/content/brands-black-form.jpg)',
 	},
 	{
-		element: document.querySelector('#clothes-link'),
-		image: 'url(./images/content/brands-bg.jpg)'
-	}
+		name: 'Головные уборы',
+		menuLink: '#link-to-headwear',
+		image: 'url(./images/content/brands-hubris.jpg)',
+	},
 ];
 
-categoriesList.forEach(category => {
-	category.element.addEventListener('mouseover', () => {
+const categoriesInMenu = categoriesList.filter(category => {
+	return category.menuLink !== null;
+});
+
+categoriesInMenu.forEach(category => {
+	let element = document.querySelector(category.menuLink);
+	element.addEventListener('mouseover', () => {
 		categoriesMenuImage.style.backgroundImage = category.image;
 	});
 });
@@ -297,7 +363,7 @@ function areCookiesAccepted() {
 }
 
 cookiesCloseButton.addEventListener('click', () => {
-	setCookie('cookiesAccepted', 'true', {'max-age': 8000000});
+	setCookie('cookiesAccepted', 'true', { 'max-age': 8000000 });
 	hideCookies();
 });
 
