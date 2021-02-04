@@ -1,12 +1,3 @@
-// DOM ELEMENTS
-const counter = document.querySelector('.counter');
-
-
-// SECTION COUNTER
-const numberOfSections = Array.from(document.querySelectorAll('.section')).length;
-counter.textContent = `1/${numberOfSections}`;
-
-
 // FULLPAGE.JS
 const myFullpage = new fullpage('#fullpage', {
 	//Navigation
@@ -74,9 +65,7 @@ const myFullpage = new fullpage('#fullpage', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){
-		counter.textContent = `${destination.index + 1}/${numberOfSections}`;
-	},
+	onLeave: function(origin, destination, direction){},
 	afterLoad: function(origin, destination, direction){},
 	afterRender: function(){},
 	afterResize: function(width, height){},

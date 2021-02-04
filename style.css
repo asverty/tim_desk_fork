@@ -44,6 +44,16 @@ input::placeholder {
   color: #bdbdbd;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 button:hover, a:hover {
   cursor: pointer;
 }
@@ -148,10 +158,14 @@ button:hover, a:hover {
 .black-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #FAFAFA;
   border-radius: 33px;
   background-color: #0F0F0F;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -174,10 +188,14 @@ button:hover, a:hover {
 .white-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #0f0f0f;
   border-radius: 33px;
   background-color: #fafafa;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -191,10 +209,14 @@ button:hover, a:hover {
 .hollow-button {
   width: 220px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #0f0f0f;
   border: 1px solid #0f0f0f;
   border-radius: 33px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -217,6 +239,7 @@ button:hover, a:hover {
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1900px) {
@@ -236,6 +259,7 @@ button:hover, a:hover {
   display: flex;
   border: 1px solid #0f0f0f;
   border-radius: 33px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -274,6 +298,7 @@ button:hover, a:hover {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1580px) {
@@ -903,6 +928,7 @@ button:hover, a:hover {
   background-color: transparent;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .header__button:last-child {
@@ -942,12 +968,18 @@ button:hover, a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #FAFAFA;
+  transition: visibility 0.3s, opacity 0.3s ease-out;
 }
 
 @media screen and (max-width: 1900px) {
   .menu {
     height: 444px;
   }
+}
+
+.menu_hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu__left-half {
@@ -964,6 +996,7 @@ button:hover, a:hover {
 }
 
 .menu__list-element {
+  width: max-content;
   list-style: none;
   margin-bottom: 18px;
 }
@@ -989,17 +1022,13 @@ button:hover, a:hover {
 }
 
 .menu__right-half {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/content/menu-bg-blank.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-}
-
-.menu__right-half_brands {
-  background-image: url(./images/content/brands-bg.jpg);
-}
-
-.menu__right-half_categories {
-  background-image: url(./images/content/categories-bg.jpg);
+  transition: background-image 0.3s ease-out;
 }
 
 
@@ -1019,6 +1048,12 @@ button:hover, a:hover {
   padding-right: 3%;
   padding-left: 3%;
   background-color: #FAFAFA;
+  transition: visibility 0.3s, opacity 0.3s ease-out;
+}
+
+.form_hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .form__grid {
@@ -1043,6 +1078,7 @@ button:hover, a:hover {
 .form__recovery-button {
   margin-top: 132px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .form__recovery-text {
@@ -1071,11 +1107,23 @@ button:hover, a:hover {
   display: flex;
   flex-direction: column;
   background-color: #0F0F0F;
+  transition: bottom 0.3s ease-out;
 }
 
 @media screen and (max-width: 1900px) {
   .cookies {
     height: 380px;
+  }
+}
+
+.cookies_hidden {
+  bottom: -508px;
+  transition: bottom 0.3s ease-out;
+}
+
+@media screen and (max-width: 1900px) {
+  .cookies_hidden {
+    bottom: -380px;
   }
 }
 
@@ -1246,11 +1294,23 @@ button:hover, a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #0F0F0F;
+  transition: bottom 0.3s ease-out;
 }
 
 @media screen and (max-width: 1900px) {
   .footer {
     height: 380px;
+  }
+}
+
+.footer_hidden {
+  bottom: -508px;
+  transition: bottom 0.3s ease-out;
+}
+
+@media screen and (max-width: 1900px) {
+  .footer_hidden {
+    bottom: -380px;
   }
 }
 
