@@ -129,82 +129,82 @@ const brandsList = [
 	{
 		name: '1991',
 		menuLink: '#link-to-1991',
-		image: 'url(../images/content/brands-1991.jpg)',
+		menuImage: '#image-for-1991',
 	},
 	{
 		name: 'Anna Maslovskaya',
 		menuLink: '#link-to-anna-maslovskaya',
-		image: 'url(../images/content/brands-anna-maslovskaya.jpg)',
+		menuImage: '#image-for-anna-maslovskaya',
 	},
 	{
 		name: 'Arha',
 		menuLink: '#link-to-arha',
-		image: 'url(../images/content/brands-arha.jpg)',
+		menuImage: '#image-for-arha',
 	},
 	{
 		name: 'Atauchi',
 		menuLink: '#link-to-atauchi',
-		image: 'url(../images/content/brands-atauchi.jpg)',
+		menuImage: '#image-for-atauchi',
 	},
 	{
 		name: 'Behurr',
 		menuLink: null,
-		image: 'url(../images/content/brands-behurr.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'BLACK FORM',
 		menuLink: '#link-to-black-form',
-		image: 'url(../images/content/brands-black-form.jpg)',
+		menuImage: '#image-for-black-form',
 	},
 	{
 		name: 'HUBRIS',
 		menuLink: '#link-to-hubris',
-		image: 'url(../images/content/brands-hubris.jpg)',
+		menuImage: '#image-for-hubris',
 	},
 	{
 		name: 'Liberte',
 		menuLink: null,
-		image: 'url(../images/content/brands-liberte.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Natalie Tonkal',
 		menuLink: null,
-		image: 'url(../images/content/brands-natalie-tonkal.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'NOT CONCEPT',
 		menuLink: null,
-		image: 'url(../images/content/brands-not-concept.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Odor Objects',
 		menuLink: '#link-to-odor-objects',
-		image: 'url(../images/content/brands-odor-objects.jpg)',
+		menuImage: '#image-for-odor-objects',
 	},
 	{
 		name: 'Other Objects',
 		menuLink: '#link-to-other-objects',
-		image: 'url(../images/content/brands-other-objects.jpg)',
+		menuImage: '#image-for-other-objects',
 	},
 	{
 		name: 'Perfert',
 		menuLink: null,
-		image: 'url(../images/content/brands-perfert.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Perfume Opera',
 		menuLink: null,
-		image: 'url(../images/content/brands-perfume-opera.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Sands',
 		menuLink: null,
-		image: 'url(../images/content/brands-sands.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Sub Rosa',
 		menuLink: '#link-to-sub-rosa',
-		image: 'url(../images/content/brands-sub-rosa.jpg)',
+		menuImage: '#image-for-sub-rosa',
 	},
 ];
 
@@ -213,9 +213,12 @@ const brandsInMenu = brandsList.filter(brand => {
 });
 
 brandsInMenu.forEach(brand => {
-	let element = document.querySelector(brand.menuLink);
-	element.addEventListener('mouseover', () => {
-		brandsMenuImage.style.backgroundImage = brand.image;
+	let brandLink = document.querySelector(brand.menuLink);
+	let brandImage = document.querySelector(brand.menuImage);
+	let allImages = document.querySelectorAll('.menu__image');
+	brandLink.addEventListener('mouseover', () => {
+		allImages.forEach(image => image.classList.add('menu__image_hidden'));
+		brandImage.classList.remove('menu__image_hidden');
 	});
 });
 
@@ -230,52 +233,52 @@ const categoriesList = [
 	{
 		name: 'Подвески',
 		menuLink: '#link-to-pendals',
-		image: 'url(../images/content/categories-pendals.jpg)',
+		menuImage: '#image-for-pendals',
 	},
 	{
 		name: 'Серьги',
 		menuLink: '#link-to-earrings',
-		image: 'url(../images/content/categories-earrings.jpg)',
+		menuImage: '#image-for-earrings',
 	},
 	{
 		name: 'Кольца',
 		menuLink: '#link-to-rings',
-		image: 'url(../images/content/categories-rings.jpg)',
+		menuImage: '#image-for-rings',
 	},
 	{
 		name: 'Браслеты',
 		menuLink: '#link-to-bracelets',
-		image: 'url(../images/content/categories-bracelets.jpg)',
+		menuImage: '#image-for-bracelets',
 	},
 	{
 		name: 'Каффы',
 		menuLink: null,
-		image: 'url(../images/content/categories-cuffs.jpg)',
+		menuImage: null,
 	},
 	{
 		name: 'Заколки',
 		menuLink: '#link-to-hairpins',
-		image: 'url(../images/content/categories-hairpins.jpg)',
+		menuImage: '#image-for-hairpins',
 	},
 	{
 		name: 'Духи',
 		menuLink: '#link-to-perfume',
-		image: '',
+		menuImage: '#image-for-perfume',
 	},
 	{
 		name: 'Твёрдые духи',
 		menuLink: null,
-		image: '',
+		menuImage: null,
 	},
 	{
 		name: 'Головные уборы',
 		menuLink: '#link-to-headwear',
-		image: '',
+		menuImage: '#image-for-headwear',
 	},
 	{
 		name: 'Одежда',
 		menuLink: null,
-		image: 'url(../images/content/categories-clothes.jpg)',
+		menuImage: null,
 	},
 ];
 
@@ -284,8 +287,11 @@ const categoriesInMenu = categoriesList.filter(category => {
 });
 
 categoriesInMenu.forEach(category => {
-	let element = document.querySelector(category.menuLink);
-	element.addEventListener('mouseover', () => {
-		categoriesMenuImage.style.backgroundImage = category.image;
+	let categoryLink = document.querySelector(category.menuLink);
+	let categoryImage = document.querySelector(category.menuImage);
+	let allCategories = document.querySelectorAll('.menu__image');
+	categoryLink.addEventListener('mouseover', () => {
+		allCategories.forEach(image => image.classList.add('menu__image_hidden'));
+		categoryImage.classList.remove('menu__image_hidden');
 	});
 });
