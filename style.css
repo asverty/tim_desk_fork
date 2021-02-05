@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Nimbus Sans";
-  src: url("../vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
-  url("../vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
+  src: url("./vendor/fonts/Nimbus/NimbusSanL-Reg.ttf") format("truetype"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff") format("woff"),
+  url("./vendor/fonts/Nimbus/NimbusSanL-Reg.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -239,7 +239,7 @@ button:hover, a:hover {
 .like-button {
   width: 38px;
   height: 32px;
-  background-image: url(../images/like-button.svg);
+  background-image: url(./images/like-button.svg);
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: center;
@@ -254,7 +254,7 @@ button:hover, a:hover {
 }
 
 .like-button_active {
-  background-image: url(../images/like-button-active.svg);
+  background-image: url(./images/like-button-active.svg);
 }
 
 .back-button {
@@ -278,7 +278,7 @@ button:hover, a:hover {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10%;
-  background-image: url(../images/to-brand-arrow.svg);
+  background-image: url(./images/to-brand-arrow.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -298,7 +298,7 @@ button:hover, a:hover {
   margin-right: 12px;
   border-radius: 50%;
   background-color: #0F0F0F;
-  background-image: url(../images/circle-like-white.svg);
+  background-image: url(./images/circle-like-white.svg);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ button:hover, a:hover {
 .circle-like-button_active {
   border: 1px solid #0f0f0f;
   background-color: transparent;
-  background-image: url(../images/circle-like-black.svg);
+  background-image: url(./images/circle-like-black.svg);
 }
 
 
@@ -450,7 +450,7 @@ button:hover, a:hover {
   display: flex;
   width: 25px;
   height: 25px;
-  background-image: url(../images/checkbox-cirlce.svg);
+  background-image: url(./images/checkbox-cirlce.svg);
   background-position: center;
   background-size: cover;
 }
@@ -465,7 +465,7 @@ button:hover, a:hover {
   content: "";
   width: 25px;
   height: 25px;
-  background-image: url(../images/checkbox-cross.svg);
+  background-image: url(./images/checkbox-cross.svg);
   background-position: center;
   background-size: cover;
   opacity: 0;
@@ -600,7 +600,7 @@ button:hover, a:hover {
   height: 48px;
   content: "";
   opacity: 0;
-  background-image: url(../images/round-size-cross.svg);
+  background-image: url(./images/round-size-cross.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -675,7 +675,7 @@ button:hover, a:hover {
   height: 48px;
   content: "";
   opacity: 0;
-  background-image: url(../images/oval-size-cross.svg);
+  background-image: url(./images/oval-size-cross.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -750,7 +750,7 @@ button:hover, a:hover {
   height: 48px;
   content: "";
   opacity: 0;
-  background-image: url(../images/oval-size-cross.svg);
+  background-image: url(./images/oval-size-cross.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -858,17 +858,17 @@ button:hover, a:hover {
 
 .materials__fake-radio_gold::before {
   width: 117px;
-  background-image: url(../images/gold-cross.svg);
+  background-image: url(./images/gold-cross.svg);
 }
 
 .materials__fake-radio_silver::before {
   width: 128px;
-  background-image: url(../images/silver-cross.svg);
+  background-image: url(./images/silver-cross.svg);
 }
 
 .materials__fake-radio_bronze::before {
   width: 116px;
-  background-image: url(../images/bronze-cross.svg);
+  background-image: url(./images/bronze-cross.svg);
 }
 
 .materials__true-radio:checked + 
@@ -914,14 +914,14 @@ button:hover, a:hover {
 .header__logo {
   width: 139px;
   height: 41px;
-  background-image: url(../images/logo-black.png);
+  background-image: url(./images/logo-black.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .header__logo_white {
-  background-image: url(../images/logo-white.png);
+  background-image: url(./images/logo-white.png);
 }
 
 .header__button {
@@ -1048,7 +1048,7 @@ button:hover, a:hover {
 .menu__right-half {
   width: 100%;
   height: 100%;
-  background-image: url(../images/content/menu-bg-blank.jpg);
+  background-image: url(./images/content/menu-bg-blank.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1158,7 +1158,7 @@ button:hover, a:hover {
   margin-top: auto;
   margin-bottom: 112px;
   align-self: center;
-  background-image: url(../images/cookies-close-button.svg);
+  background-image: url(./images/cookies-close-button.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1176,19 +1176,19 @@ button:hover, a:hover {
 }
 
 .section_1 {
-  background-image: url(../images/content/fullpage-section-1.jpg);
+  background-image: url(./images/content/fullpage-section-1.jpg);
 }
 
 .section_2 {
-  background-image: url(../images/content/fullpage-section-2.jpg);
+  background-image: url(./images/content/fullpage-section-2.jpg);
 }
 
 .section_3 {
-  background-image: url(../images/content/fullpage-section-3.jpg);
+  background-image: url(./images/content/fullpage-section-3.jpg);
 }
 
 .section_4 {
-  background-image: url(../images/content/fullpage-section-4.jpg);
+  background-image: url(./images/content/fullpage-section-4.jpg);
 }
 
 .section__info {
@@ -1516,7 +1516,7 @@ button:hover, a:hover {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url(../images/content/brand-grid-picture.jpg);
+  background-image: url(./images/content/brand-grid-picture.jpg);
   background-size: cover;
 }
 
@@ -1868,7 +1868,7 @@ button:hover, a:hover {
   z-index: 0;
   max-width: 100%;
   height: 100%;
-  background-image: url(../images/content/ring-prayer.jpg);
+  background-image: url(./images/content/ring-prayer.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1904,7 +1904,7 @@ button:hover, a:hover {
   box-sizing: border-box;
   outline: none;
   background-color: #FAFAFA;
-  background-image: url(../images/edit-button-cross.svg);
+  background-image: url(./images/edit-button-cross.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
