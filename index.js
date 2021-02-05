@@ -103,6 +103,8 @@ const headerSubscribeButton = document.querySelector('#header-subscribe-button')
 const headerLogInButton = document.querySelector('#header-login-button');
 const headerSignInButton = document.querySelector('#header-signin-button');
 const headerForgotPasswordButton = document.querySelector('#header-forgot-password-button');
+const headerWishesButton = document.querySelector('#header-wishes-button');
+const headerCartButton = document.querySelector('#header-cart-button');
 const menus = document.querySelectorAll('.menu');
 const brandsMenu = document.querySelector('#brands-menu');
 const categoriesMenu = document.querySelector('#categories-menu');
@@ -111,6 +113,13 @@ const signInForm = document.querySelector('#signin-form');
 const logInForm = document.querySelector('#login-form');
 const subscribeForm = document.querySelector('#subscribe-form');
 const passwordRecoveryForm = document.querySelector('#password-recovery-form');
+const outlines = document.querySelectorAll('.header__button-outline');
+const brandsOutline = document.querySelector('#brands-outline');
+const categoriesOutline = document.querySelector('#categories-outline');
+const subscribeOutline = document.querySelector('#subscribe-outline');
+const logInOutline = document.querySelector('#login-outline');
+const wishesOutline = document.querySelector('#wishes-outline');
+const cartOutline = document.querySelector('#cart-outline');
 
 function headerTurnsBlack() {
 	headerLogo.classList.remove('header__logo_white');
@@ -122,6 +131,14 @@ function headerTurnsWhite() {
 	buttons.forEach(button => button.classList.add('header__button_white'));
 };
 
+function showOutline(outline) {
+	outline.classList.remove('header__button-outline_hidden');
+};
+
+function hideAllOutlines() {
+	outlines.forEach(outline => outline.classList.add('header__button-outline_hidden'));
+}
+
 function showPopup(popup, hidingClass) {
 	headerTurnsBlack();
 	popup.classList.remove(hidingClass);
@@ -130,22 +147,53 @@ function showPopup(popup, hidingClass) {
 function hideAllPopups() {
 	menus.forEach(menu => menu.classList.add('menu_hidden'));
 	forms.forEach(form => form.classList.add('form_hidden'));
+	hideAllOutlines();
 	headerTurnsWhite();
 };
 
-function togglePopup(popup, hidingClass) {
-	if (popup.classList.contains(hidingClass)) {
-		hideAllPopups();
-		showPopup(popup, hidingClass);
-	} else hideAllPopups();
-};
+headerBrandsButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(brandsOutline);
+	showPopup(brandsMenu, 'menu_hidden');
+});
 
-headerBrandsButton.addEventListener('click', () => togglePopup(brandsMenu, 'menu_hidden'));
-headerCategoriesButton.addEventListener('click', () => togglePopup(categoriesMenu, 'menu_hidden'));
-headerSubscribeButton.addEventListener('click', () => togglePopup(subscribeForm, 'form_hidden'));
-headerLogInButton.addEventListener('click', () => togglePopup(logInForm, 'form_hidden'));
-headerSignInButton.addEventListener('click', () => togglePopup(signInForm, 'form_hidden'));
-headerForgotPasswordButton.addEventListener('click', () => togglePopup(passwordRecoveryForm, 'form_hidden'));
+headerCategoriesButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(categoriesOutline);
+	showPopup(categoriesMenu, 'menu_hidden');
+});
+
+headerSubscribeButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(subscribeOutline);
+	showPopup(subscribeForm, 'form_hidden');
+});
+
+headerLogInButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(logInOutline);
+	showPopup(logInForm, 'form_hidden');
+});
+
+headerSignInButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(logInOutline);
+	showPopup(signInForm, 'form_hidden');
+});
+
+headerForgotPasswordButton.addEventListener('click', () => {
+	hideAllPopups();
+	showOutline(logInOutline);
+	showPopup(passwordRecoveryForm, 'form_hidden');
+});
+
+headerWishesButton.addEventListener('click', () => {
+	showOutline(wishesOutline);
+});
+
+headerCartButton.addEventListener('click', () => {
+	showOutline(cartOutline);
+});
 
 sections.forEach(section => {
 	section.addEventListener('click', () => hideAllPopups());
@@ -267,37 +315,37 @@ const categoriesList = [
 	{
 		name: 'Подвески',
 		menuLink: '#link-to-pendals',
-		image: 'url(./images/content/brands-1991.jpg)',
+		image: 'url(./images/content/categories-pendals.jpg)',
 	},
 	{
 		name: 'Серьги',
 		menuLink: '#link-to-earrings',
-		image: 'url(./images/content/brands-anna-maslovskaya.jpg)',
+		image: 'url(./images/content/categories-earrings.jpg)',
 	},
 	{
 		name: 'Кольца',
 		menuLink: '#link-to-rings',
-		image: 'url(./images/content/brands-arha.jpg)',
+		image: 'url(./images/content/categories-rings.jpg)',
 	},
 	{
 		name: 'Браслеты',
 		menuLink: '#link-to-bracelets',
-		image: 'url(./images/content/brands-atauchi.jpg)',
+		image: 'url(./images/content/categories-bracelets.jpg)',
 	},
 	{
 		name: 'Заколки',
 		menuLink: '#link-to-hairpins',
-		image: 'url(./images/content/brands-behurr.jpg)',
+		image: 'url(./images/content/categories-hairpins.jpg)',
 	},
 	{
 		name: 'Парфюм',
 		menuLink: '#link-to-perfume',
-		image: 'url(./images/content/brands-black-form.jpg)',
+		image: 'url(./images/content/menu-bg-blank.jpg)',
 	},
 	{
 		name: 'Головные уборы',
 		menuLink: '#link-to-headwear',
-		image: 'url(./images/content/brands-hubris.jpg)',
+		image: 'url(./images/content/menu-bg-blank.jpg)',
 	},
 ];
 

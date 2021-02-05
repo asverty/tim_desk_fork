@@ -921,6 +921,7 @@ button:hover, a:hover {
 }
 
 .header__button {
+  position: relative;
   margin-right: 2.5vw;
   font-size: 16px;
   text-decoration: none;
@@ -949,6 +950,24 @@ button:hover, a:hover {
 
 .header__button_cart {
   margin-top: -4px;
+}
+
+.header__button-outline {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
+  border: 1px solid #0f0f0f;
+  border-radius: 50%;
+}
+
+.header__button-outline_white {
+  border: 1px solid #fafafa;
+}
+
+.header__button-outline_hidden {
+  display: none;
 }
 
 

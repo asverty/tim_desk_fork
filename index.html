@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
   <meta name="robots" content="">
   <title>Магазин «SYMPTOM» — современные украшения из серебра и золота</title>
-  <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="preload" as="style" href="./node_modules/fullpage.js/dist/fullpage.css" />
+  <link rel="preload" as="style" href="./style.css" />
 </head>
 
 <body>
@@ -22,16 +22,36 @@
       <a id="header-logo" class="header__logo header__logo_white" href="./index.html"></a>
     </div>
     <div class="header__fraction">
-      <span id="header-brands-button" class="header__button header__button_white">БРЕНДЫ</span>
-      <span id="header-categories-button" class="header__button header__button_white">КАТЕГОРИИ</span>
+      <button id="header-brands-button" class="header__button header__button_white" type='button'>
+        <span id="brands-outline" class="header__button-outline header__button-outline_hidden"></span>
+        БРЕНДЫ
+      </button>
+      <button id="header-categories-button" class="header__button header__button_white" type='button'>
+        <span id="categories-outline" class="header__button-outline header__button-outline_hidden"></span>
+        КАТЕГОРИИ
+      </button>
     </div>
     <div class="header__fraction">
-      <span id="header-subscribe-button" class="header__button header__button_white">ПОДПИСАТЬСЯ</span>
+      <button id="header-subscribe-button" class="header__button header__button_white" type='button'>
+        <span id="subscribe-outline" class="header__button-outline header__button-outline_hidden"></span>
+        ПОДПИСАТЬСЯ
+      </button>
     </div>
     <div class="header__fraction">
-      <span id="header-login-button" class="header__button header__button_login header__button_white">ВОЙТИ</span>
-      <a id="header-wishes-button" class="header__button header__button_wishes header__button_white" href="./pages/wishes.html">ЖЕЛАНИЯ</a>
-      <a id="header-cart-button" class="header__button header__button_cart header__button_white" href="./pages/cart.html">КОРЗИНА(00)</a>
+      <button id="header-login-button" class="header__button header__button_login header__button_white" type='button'>
+        <span id="login-outline" class="header__button-outline header__button-outline_hidden"></span>
+        ВОЙТИ
+      </button>
+      <a id="header-wishes-button" class="header__button header__button_wishes header__button_white"
+        href="./pages/wishes.html">
+        <span id="wishes-outline" class="header__button-outline header__button-outline_white header__button-outline_hidden"></span>
+        ЖЕЛАНИЯ
+      </a>
+      <a id="header-cart-button" class="header__button header__button_cart header__button_white"
+        href="./pages/cart.html">
+        <span id="cart-outline" class="header__button-outline header__button-outline_white header__button-outline_hidden"></span>
+        КОРЗИНА(00)
+      </a>
     </div>
   </header>
 
@@ -149,7 +169,8 @@
       <ul>
         <li id="link-to-atauchi" class="menu__list-element"><a href="" class="menu__link">Atauchi</a></li>
         <li id="link-to-odor-objects" class="menu__list-element"><a href="" class="menu__link">Odor Objects</a></li>
-        <li id="link-to-anna-maslovskaya" class="menu__list-element"><a href="" class="menu__link">Anna Maslovskaya</a></li>
+        <li id="link-to-anna-maslovskaya" class="menu__list-element"><a href="" class="menu__link">Anna Maslovskaya</a>
+        </li>
       </ul>
     </nav>
     <div id="brand-menu-image" class="menu__right-half"></div>
@@ -228,7 +249,7 @@
           <input class="input__field" type="email" placeholder="your@e-mail.com">
           <span class="input__error">Некорректный адрес электронной почты</span>
         </div>
-        <span id="header-signin-button" class="hollow-button">Регистрация</span>
+        <button id="header-signin-button" class="hollow-button" type='button'>Регистрация</button>
       </div>
 
       <div class="form__right-half">
@@ -238,7 +259,7 @@
           <span class="input__error">Пароль слишком короткий</span>
         </div>
         <button class="black-button">Вход</button>
-        <span id="header-forgot-password-button" class="form__recovery-button">Забыли пароль?</span>
+        <button id="header-forgot-password-button" class="form__recovery-button" type='button'>Забыли пароль?</button>
       </div>
     </div>
   </form>
