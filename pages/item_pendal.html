@@ -19,19 +19,37 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__fraction">
-      <a class="header__logo" href="../index.html"></a>
+      <a id="header-logo" class="header__logo" href="../index.html"></a>
     </div>
     <div class="header__fraction">
-      <button class="header__button">БРЕНДЫ</button>
-      <button class="header__button">КАТЕГОРИИ</button>
+      <button id="header-brands-button" class="header__button" type='button'>
+        <span id="brands-outline" class="header__button-outline header__button-outline_hidden"></span>
+        БРЕНДЫ
+      </button>
+      <button id="header-categories-button" class="header__button" type='button'>
+        <span id="categories-outline" class="header__button-outline header__button-outline_hidden"></span>
+        КАТЕГОРИИ
+      </button>
     </div>
     <div class="header__fraction">
-      <button class="header__button">ПОДПИСАТЬСЯ</button>
+      <button id="header-subscribe-button" class="header__button" type='button'>
+        <span id="subscribe-outline" class="header__button-outline header__button-outline_hidden"></span>
+        ПОДПИСАТЬСЯ
+      </button>
     </div>
     <div class="header__fraction">
-      <button class="header__button header__button_login">ВОЙТИ</button>
-      <a class="header__button header__button_wishes" href="./wishes.html">ЖЕЛАНИЯ</a>
-      <a class="header__button header__button_cart" href="./cart.html">КОРЗИНА(00)</a>
+      <button id="header-login-button" class="header__button header__button_login" type='button'>
+        <span id="login-outline" class="header__button-outline header__button-outline_hidden"></span>
+        ВОЙТИ
+      </button>
+      <a id="header-wishes-button" class="header__button header__button_wishes" href="./wishes.html">
+        <span id="wishes-outline" class="header__button-outline header__button-outline_hidden"></span>
+        ЖЕЛАНИЯ
+      </a>
+      <a id="header-cart-button" class="header__button header__button_cart" href="./cart.html">
+        <span id="cart-outline" class="header__button-outline header__button-outline_hidden"></span>
+        КОРЗИНА(00)
+      </a>
     </div>
   </header>
 
@@ -109,139 +127,54 @@
     </div>
   </div>
 
+
   <!-- SECTION COUNTER -->
   <span class="counter counter_item"></span>
 
+
   <!-- MENU: BRANDS -->
-  <!-- <div class="menu">
+  <div id="brands-menu" class="menu menu_hidden">
     <nav class="menu__left-half">
       <ul>
-        <li class="menu__list-element"><a href="" class="menu__link">Other Objects</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Sub Rosa</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">BLACK FORM</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">HUBRIS</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Arha</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">1991</a></li>
+        <li id="link-to-other-objects" class="menu__list-element"><a href="" class="menu__link">Other Objects</a></li>
+        <li id="link-to-sub-rosa" class="menu__list-element"><a href="" class="menu__link">Sub Rosa</a></li>
+        <li id="link-to-black-form" class="menu__list-element"><a href="" class="menu__link">BLACK FORM</a></li>
+        <li id="link-to-hubris" class="menu__list-element"><a href="" class="menu__link">HUBRIS</a></li>
+        <li id="link-to-arha" class="menu__list-element"><a href="" class="menu__link">Arha</a></li>
+        <li id="link-to-1991" class="menu__list-element"><a href="" class="menu__link">1991</a></li>
       </ul>
       <ul>
-        <li class="menu__list-element"><a href="" class="menu__link">Atauchi</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Odor Objects</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Anna Maslovskaya</a></li>
+        <li id="link-to-atauchi" class="menu__list-element"><a href="" class="menu__link">Atauchi</a></li>
+        <li id="link-to-odor-objects" class="menu__list-element"><a href="" class="menu__link">Odor Objects</a></li>
+        <li id="link-to-anna-maslovskaya" class="menu__list-element"><a href="" class="menu__link">Anna Maslovskaya</a>
+        </li>
       </ul>
     </nav>
-    <div class="menu__right-half menu__right-half_brands"></div>
-  </div> -->
+    <div id="brand-menu-image" class="menu__right-half"></div>
+  </div>
 
 
   <!-- MENU: CATEGORIES -->
-  <!-- <div class="menu">
+  <div id="categories-menu" class="menu menu_hidden">
     <nav class="menu__left-half">
       <ul>
-        <li class="menu__list-element"><a href="" class="menu__link">Подвески</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Серьги</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Кольца</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Браслеты</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Заколки</a></li>
+        <li id="link-to-pendals" class="menu__list-element"><a href="" class="menu__link">Подвески</a></li>
+        <li id="link-to-earrings" class="menu__list-element"><a href="" class="menu__link">Серьги</a></li>
+        <li id="link-to-rings" class="menu__list-element"><a href="" class="menu__link">Кольца</a></li>
+        <li id="link-to-bracelets" class="menu__list-element"><a href="" class="menu__link">Браслеты</a></li>
+        <li id="link-to-hairpins" class="menu__list-element"><a href="" class="menu__link">Заколки</a></li>
       </ul>
       <ul>
-        <li class="menu__list-element"><a href="" class="menu__link">Парфюм</a></li>
-        <li class="menu__list-element"><a href="" class="menu__link">Головные уборы</a></li>
+        <li id="link-to-perfume" class="menu__list-element"><a href="" class="menu__link">Духи</a></li>
+        <li id="link-to-headwear" class="menu__list-element"><a href="" class="menu__link">Головные уборы</a></li>
       </ul>
     </nav>
-    <div class="menu__right-half menu__right-half_categories"></div>
-  </div> -->
-
-
-  <!-- FORM: SIGN IN -->
-  <!-- <form class="form">
-    <h3 class="heading heading_form">Регистрация</h3>
-    <div class="form__grid">
-
-      <div class="form__left-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <label class="checkbox checkbox_form">
-          <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
-            <div class="checkbox__fake-checkbox"></div>
-          </div>
-          <p class="checkbox__description">I would like to receive information about new collections<br>and special
-            offers by the specified email</p>
-        </label>
-      </div>
-
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="Your pass">
-          <span class="input__error">Пароль слишком короткий</span>
-        </div>
-        <label class="checkbox checkbox_form">
-          <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
-            <div class="checkbox__fake-checkbox"></div>
-          </div>
-          <p class="checkbox__description">By clicking the "Checkout" button you consent to the processing<br>of
-            your
-            personal data</p>
-        </label>
-        <button class="black-button">Регистрация</button>
-      </div>
-    </div>
-  </form> -->
-
-
-  <!-- FORM: LOG IN -->
-  <!-- <form class="form">
-    <h3 class="heading heading_form">Вход</h3>
-    <div class="form__grid">
-
-      <div class="form__left-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <button class="hollow-button">Регистрация</button>
-      </div>
-
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="Your pass">
-          <span class="input__error">Пароль слишком короткий</span>
-        </div>
-        <button class="black-button">Вход</button>
-        <button class="form__recovery-button">Забыли пароль?</button>
-      </div>
-    </div>
-  </form> -->
-
-  <!-- FORM: PASSWORD RECOVERY -->
-  <!-- <form class="form">
-    <h3 class="heading heading_form">Восстановление</h3>
-    <div class="form__grid">
-      <div class="form__left-half"></div>
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail / Имя пользователя:</h3>
-          <input class="input__field" type="text" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <p class="paragraph paragraph_form">Укажите свой Email или имя пользователя.<br>Ссылку на создание
-          нового пароля вы
-          получите<br>по электронной почте.</p>
-        <button class="black-button">Восстановить пароль</button>
-      </div>
-    </div>
-  </form> -->
+    <div id="categories-menu-image" class="menu__right-half"></div>
+  </div>
 
 
   <!-- FORM: SUBSCRIBE -->
-  <!-- <form class="form">
+  <form id="subscribe-form" class="form form_hidden">
     <h3 class="heading heading_form">Давайте познакомимся</h3>
     <div class="form__grid">
 
@@ -279,22 +212,100 @@
         <button class="black-button">Подписаться</button>
       </div>
     </div>
-  </form> -->
+  </form>
 
 
-  <!-- COOKIES -->
-  <!-- <div class="cookies">
-    <p class="paragraph paragraph_cookies">
-      Our site, like most others, uses cookies and other similar technologies (pixel tags, etc.) to provide services
-      that best meet your interests and needs, as well as collect statistical and marketing information to analyze and
-      improve our services and sites.<br><br>By using this site, you agree to the use of cookies and other similar
-      technologies in accordance with this Notice.
-    </p>
-    <button class="cookies__close-button"></button>
-  </div> -->
+  <!-- FORM: LOG IN -->
+  <form id="login-form" class="form form_hidden">
+    <h3 class="heading heading_form">Вход</h3>
+    <div class="form__grid">
 
+      <div class="form__left-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail:</h3>
+          <input class="input__field" type="email" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <button id="signin-button" class="hollow-button" type='button'>Регистрация</button>
+      </div>
+
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">Пароль:</h3>
+          <input class="input__field" type="password" placeholder="Your pass">
+          <span class="input__error">Пароль слишком короткий</span>
+        </div>
+        <button class="black-button">Вход</button>
+        <button id="recovery-button" class="form__recovery-button" type='button'>Забыли пароль?</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- FORM: SIGN IN -->
+  <form id="signin-form" class="form form_hidden">
+    <h3 class="heading heading_form">Регистрация</h3>
+    <div class="form__grid">
+
+      <div class="form__left-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail:</h3>
+          <input class="input__field" type="email" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <label class="checkbox checkbox_form">
+          <div>
+            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <div class="checkbox__fake-checkbox"></div>
+          </div>
+          <p class="checkbox__description">I would like to receive information about new collections<br>and special
+            offers by the specified email</p>
+        </label>
+      </div>
+
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">Пароль:</h3>
+          <input class="input__field" type="password" placeholder="Your pass">
+          <span class="input__error">Пароль слишком короткий</span>
+        </div>
+        <label class="checkbox checkbox_form">
+          <div>
+            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <div class="checkbox__fake-checkbox"></div>
+          </div>
+          <p class="checkbox__description">By clicking the "Checkout" button you consent to the processing<br>of
+            your
+            personal data</p>
+        </label>
+        <button class="black-button">Регистрация</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- FORM: PASSWORD RECOVERY -->
+  <form id="password-recovery-form" class="form form_hidden">
+    <h3 class="heading heading_form">Восстановление</h3>
+    <div class="form__grid">
+      <div class="form__left-half"></div>
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail / Имя пользователя:</h3>
+          <input class="input__field" type="text" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <p class="paragraph paragraph_form">Укажите свой Email или имя пользователя.<br>Ссылку на создание
+          нового пароля вы
+          получите<br>по электронной почте.</p>
+        <button class="black-button">Восстановить пароль</button>
+      </div>
+    </div>
+  </form>
+
+  
   <script src="../node_modules/fullpage.js/dist/fullpage.js"></script>
-  <script src="../item.js"></script>
+  <script src="../scripts/common.js"></script>
 
 </body>
 

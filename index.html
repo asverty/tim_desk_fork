@@ -17,7 +17,7 @@
 
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header header_two-colored">
     <div class="header__fraction">
       <a id="header-logo" class="header__logo header__logo_white" href="./index.html"></a>
     </div>
@@ -188,100 +188,12 @@
         <li id="link-to-hairpins" class="menu__list-element"><a href="" class="menu__link">Заколки</a></li>
       </ul>
       <ul>
-        <li id="link-to-perfume" class="menu__list-element"><a href="" class="menu__link">Парфюм</a></li>
+        <li id="link-to-perfume" class="menu__list-element"><a href="" class="menu__link">Духи</a></li>
         <li id="link-to-headwear" class="menu__list-element"><a href="" class="menu__link">Головные уборы</a></li>
       </ul>
     </nav>
     <div id="categories-menu-image" class="menu__right-half"></div>
   </div>
-
-
-  <!-- FORM: SIGN IN -->
-  <form id="signin-form" class="form form_hidden">
-    <h3 class="heading heading_form">Регистрация</h3>
-    <div class="form__grid">
-
-      <div class="form__left-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <label class="checkbox checkbox_form">
-          <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
-            <div class="checkbox__fake-checkbox"></div>
-          </div>
-          <p class="checkbox__description">I would like to receive information about new collections<br>and special
-            offers by the specified email</p>
-        </label>
-      </div>
-
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="Your pass">
-          <span class="input__error">Пароль слишком короткий</span>
-        </div>
-        <label class="checkbox checkbox_form">
-          <div>
-            <input class="checkbox__true-checkbox" type="checkbox" checked>
-            <div class="checkbox__fake-checkbox"></div>
-          </div>
-          <p class="checkbox__description">By clicking the "Checkout" button you consent to the processing<br>of
-            your
-            personal data</p>
-        </label>
-        <button class="black-button">Регистрация</button>
-      </div>
-    </div>
-  </form>
-
-
-  <!-- FORM: LOG IN -->
-  <form id="login-form" class="form form_hidden">
-    <h3 class="heading heading_form">Вход</h3>
-    <div class="form__grid">
-
-      <div class="form__left-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail:</h3>
-          <input class="input__field" type="email" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <button id="header-signin-button" class="hollow-button" type='button'>Регистрация</button>
-      </div>
-
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">Пароль:</h3>
-          <input class="input__field" type="password" placeholder="Your pass">
-          <span class="input__error">Пароль слишком короткий</span>
-        </div>
-        <button class="black-button">Вход</button>
-        <button id="header-forgot-password-button" class="form__recovery-button" type='button'>Забыли пароль?</button>
-      </div>
-    </div>
-  </form>
-
-  <!-- FORM: PASSWORD RECOVERY -->
-  <form id="password-recovery-form" class="form form_hidden">
-    <h3 class="heading heading_form">Восстановление</h3>
-    <div class="form__grid">
-      <div class="form__left-half"></div>
-      <div class="form__right-half">
-        <div class="input input_form">
-          <h3 class="input__heading">E-mail / Имя пользователя:</h3>
-          <input class="input__field" type="text" placeholder="your@e-mail.com">
-          <span class="input__error">Некорректный адрес электронной почты</span>
-        </div>
-        <p class="paragraph paragraph_form">Укажите свой Email или имя пользователя.<br>Ссылку на создание
-          нового пароля вы
-          получите<br>по электронной почте.</p>
-        <button class="black-button">Восстановить пароль</button>
-      </div>
-    </div>
-  </form>
 
 
   <!-- FORM: SUBSCRIBE -->
@@ -326,8 +238,97 @@
   </form>
 
 
+  <!-- FORM: LOG IN -->
+  <form id="login-form" class="form form_hidden">
+    <h3 class="heading heading_form">Вход</h3>
+    <div class="form__grid">
+
+      <div class="form__left-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail:</h3>
+          <input class="input__field" type="email" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <button id="signin-button" class="hollow-button" type='button'>Регистрация</button>
+      </div>
+
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">Пароль:</h3>
+          <input class="input__field" type="password" placeholder="Your pass">
+          <span class="input__error">Пароль слишком короткий</span>
+        </div>
+        <button class="black-button">Вход</button>
+        <button id="recovery-button" class="form__recovery-button" type='button'>Забыли пароль?</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- FORM: SIGN IN -->
+  <form id="signin-form" class="form form_hidden">
+    <h3 class="heading heading_form">Регистрация</h3>
+    <div class="form__grid">
+
+      <div class="form__left-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail:</h3>
+          <input class="input__field" type="email" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <label class="checkbox checkbox_form">
+          <div>
+            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <div class="checkbox__fake-checkbox"></div>
+          </div>
+          <p class="checkbox__description">I would like to receive information about new collections<br>and special
+            offers by the specified email</p>
+        </label>
+      </div>
+
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">Пароль:</h3>
+          <input class="input__field" type="password" placeholder="Your pass">
+          <span class="input__error">Пароль слишком короткий</span>
+        </div>
+        <label class="checkbox checkbox_form">
+          <div>
+            <input class="checkbox__true-checkbox" type="checkbox" checked>
+            <div class="checkbox__fake-checkbox"></div>
+          </div>
+          <p class="checkbox__description">By clicking the "Checkout" button you consent to the processing<br>of
+            your
+            personal data</p>
+        </label>
+        <button class="black-button">Регистрация</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- FORM: PASSWORD RECOVERY -->
+  <form id="password-recovery-form" class="form form_hidden">
+    <h3 class="heading heading_form">Восстановление</h3>
+    <div class="form__grid">
+      <div class="form__left-half"></div>
+      <div class="form__right-half">
+        <div class="input input_form">
+          <h3 class="input__heading">E-mail / Имя пользователя:</h3>
+          <input class="input__field" type="text" placeholder="your@e-mail.com">
+          <span class="input__error">Некорректный адрес электронной почты</span>
+        </div>
+        <p class="paragraph paragraph_form">Укажите свой Email или имя пользователя.<br>Ссылку на создание
+          нового пароля вы
+          получите<br>по электронной почте.</p>
+        <button class="black-button">Восстановить пароль</button>
+      </div>
+    </div>
+  </form>
+
+
   <!-- COOKIES -->
-  <div id="cookies-popup" class="cookies">
+  <div id="cookies-popup" class="cookies cookies_hidden">
     <p class="paragraph paragraph_cookies">
       Our site, like most others, uses cookies and other similar technologies (pixel tags, etc.) to provide services
       that best meet your interests and needs, as well as collect statistical and marketing information to analyze and
@@ -337,8 +338,10 @@
     <button id="cookies-close-button" class="cookies__close-button"></button>
   </div>
 
+  
   <script src="./node_modules/fullpage.js/dist/fullpage.js"></script>
-  <script src="./index.js"></script>
+  <script src="./scripts/common.js"></script>
+  <script src="./scripts/index.js"></script>
 
 </body>
 

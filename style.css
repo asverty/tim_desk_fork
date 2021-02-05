@@ -24,6 +24,10 @@ body {
   background-color: #FAFAFA;
 }
 
+main {
+  min-height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6, p, 
 span, li, a, input, button {
   font-family: "Nimbus Sans", Arial, sans-serif;
@@ -1128,6 +1132,7 @@ button:hover, a:hover {
   flex-direction: column;
   background-color: #0F0F0F;
   transition: bottom 0.3s ease-out;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1900px) {
