@@ -102,20 +102,21 @@ recoveryButton.addEventListener('click', () => {
 	showPopup(passwordRecoveryForm, 'form_hidden');
 });
 
-headerWishesButton.addEventListener('click', () => {
-	showOutline(wishesOutline);
-});
+headerWishesButton.addEventListener('click', () => showOutline(wishesOutline));
+headerCartButton.addEventListener('click', () => showOutline(cartOutline));
 
-headerCartButton.addEventListener('click', () => {
-	showOutline(cartOutline);
-});
-
+// закрываем меню и футеры кликом по основному разделу
 document.addEventListener('keydown', event => {
 	if (event.key == 'Escape') hideAllPopups();
 });
 
-main.addEventListener('click', () => {
-  hideAllPopups();
+// закрываем меню и футеры кликом по основному разделу
+main.addEventListener('click', () => hideAllPopups());
+
+// закрываем меню и футеры кликом по футеру
+document.addEventListener('click', event => {
+	let isFooter = event.target.closest('.footer');
+	if (isFooter) hideAllPopups();
 });
 
 

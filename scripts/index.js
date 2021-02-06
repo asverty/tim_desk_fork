@@ -113,7 +113,7 @@ document.addEventListener('keydown', event => {
 	if ((activeSection.isLast) && (event.key == 'ArrowDown')) showFooter();
 });
 
-// закрываем футер клавишей "вверх"
+// закрываем футер клавишей "вверх" или "Esc"
 document.addEventListener('keydown', event => {
 	let activeSection = myFullpage.getActiveSection();
 	if ((activeSection.isLast) && ((event.key == 'ArrowUp') || event.key == 'Escape')) hideFooter();
@@ -124,11 +124,29 @@ lastSection.addEventListener('wheel', event => {
 	if (event.wheelDelta < 0) showFooter();
 });
 
+// Mozilla Firefox
+// открываем футер колёсиком мыши
+lastSection.addEventListener('DOMMouseScroll', event => {
+	if (event.detail > 0) showFooter();
+});
+
 // закрываем футер колёсиком мыши (если курсор на секции)
 lastSection.addEventListener('wheel', event => {
 	if (event.wheelDelta > 0) hideFooter();
 });
 
+// Mozilla Firefox
+// закрываем футер колёсиком мыши (если курсор на секции)
+lastSection.addEventListener('DOMMouseScroll', event => {
+	if (event.detail < 0) hideFooter();
+});
+
+// закрываем футер колёсиком мыши (если курсор на самом футере)
+footer.addEventListener('DOMMouseScroll', event => {
+	if (event.detail < 0) hideFooter();
+});
+
+// Mozilla Firefox
 // закрываем футер колёсиком мыши (если курсор на самом футере)
 footer.addEventListener('wheel', event => {
 	if (event.wheelDelta > 0) hideFooter();
@@ -137,6 +155,18 @@ footer.addEventListener('wheel', event => {
 // закрываем футер кликом по секции
 lastSection.addEventListener('click', () => {
 	if (!footer.classList.contains('footer_hidden')) hideFooter();
+});
+
+// закрываем футер кликом по меню
+// ВАЖНО: переменная menus берётся из common.js
+menus.forEach(menu => {
+	menu.addEventListener('click', () => hideFooter());
+});
+
+// закрываем футер кликом по форме
+// ВАЖНО: переменная forms берётся из common.js
+forms.forEach(form => {
+	form.addEventListener('click', () => hideFooter());
 });
 
 
